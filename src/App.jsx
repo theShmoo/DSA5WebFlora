@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Jumbotron, Grid, Row, PageHeader} from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, PageHeader} from 'react-bootstrap';
 import FilterWidget from './FilterWidget.jsx';
+import DSAMonthPicker from './DSAMonthPicker.jsx';
 import './App.css';
 
 export default class App extends Component {
@@ -17,7 +18,13 @@ export default class App extends Component {
 
   componentDidMount()
   {
-
+    this.setState({
+      "filter":
+      {
+        "gebiete": ["1"],
+        "months": []
+      }
+    });
   }
 
   onFilterChanged(filter) {
@@ -41,16 +48,17 @@ export default class App extends Component {
         <Row>
           <PageHeader>Filter</PageHeader>
         </Row>
-        <FilterWidget options={["1","2","3"]}
-          title="Filter by Machine"
-          selected="1"
-          property="maschine_id"
-          onUserInput={this.onFilterChanged}/>
-        <FilterWidget options={["1","2","3"]}
-          title="Filter by Channel"
-          selected="2"
-          property="prop"
-          onUserInput={this.onFilterChanged}/>
+        <Col>
+          <FilterWidget options={["1","2","3"]}
+            title="Gebiet"
+            selected={this.state.filter.gebiete}
+            property="gebiete"
+            onUserInput={this.onFilterChanged}/>
+          <DSAMonthPicker title="Erntezeit"
+            selected={this.state.filter.months}
+            property="months"
+            onUserInput={this.onFilterChanged} />
+        </Col>
       </Grid>
     );
   }
