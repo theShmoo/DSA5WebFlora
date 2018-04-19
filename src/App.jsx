@@ -3,6 +3,8 @@ import { Jumbotron, Grid, Row, Col, PageHeader} from 'react-bootstrap';
 import FilterWidget from './FilterWidget.jsx';
 import DSAMonthPicker from './DSAMonthPicker.jsx';
 import './App.css';
+import data from "./data.jsx";
+
 
 export default class App extends Component {
 
@@ -10,7 +12,10 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      filter: {}
+      filter: {
+        gebiete: [],
+        months: []
+      },
     };
 
     this.onFilterChanged = this.onFilterChanged.bind(this)
@@ -19,10 +24,10 @@ export default class App extends Component {
   componentDidMount()
   {
     this.setState({
-      "filter":
+      filter:
       {
-        "gebiete": ["1"],
-        "months": []
+        gebiete: [],
+        months: []
       }
     });
   }
@@ -39,7 +44,41 @@ export default class App extends Component {
     });
   }
 
+  getGebiete(flora) {
+    // get all gebiete arrays
+    const gebieteArrays = flora.map((f) => {
+        return f.Gebiete;
+    });
+    // flattern the array (it is an array of arrays)
+    return [].concat(...gebieteArrays)
+    // only use unique values
+    .filter((val, id, array) => {
+       return array.indexOf(val) === id;
+    })
+    // sort it (by alph)
+    .sort();
+  }
+
+  getFilteredFlora(flora, currentFilter) {
+    return flora.filter((f) => {
+      // check the filters:
+      // 1) Gebiet
+      if(currentFilter.gebiete.length > 0 && !f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
+        return false;
+      // 2) Month
+      if(currentFilter.months.length > 0 && !f.Ernte.some(r => currentFilter.months.includes(r)))
+         return false;
+
+      return true;
+    });
+  }
+
   render() {
+    const gebiete = this.getGebiete(data.flora);
+    const filteredFloraCols = this.getFilteredFlora(data.flora, this.state.filter)
+    .map((f) => {
+      return (<Col sx={6} md={4}>{f.Name}</Col>);
+    });
     return (
       <Grid>
         <Jumbotron>
@@ -48,17 +87,23 @@ export default class App extends Component {
         <Row>
           <PageHeader>Filter</PageHeader>
         </Row>
-        <Col>
-          <FilterWidget options={["1","2","3"]}
+        <Col xs={6} md={4}>
+          <FilterWidget options={gebiete}
             title="Gebiet"
             selected={this.state.filter.gebiete}
             property="gebiete"
             onUserInput={this.onFilterChanged}/>
+        </Col>
+        <Col xs={6} md={4}>
           <DSAMonthPicker title="Erntezeit"
             selected={this.state.filter.months}
             property="months"
             onUserInput={this.onFilterChanged} />
         </Col>
+        <Row>
+          <PageHeader>Flora</PageHeader>
+        </Row>
+        {filteredFloraCols}
       </Grid>
     );
   }

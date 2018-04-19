@@ -23,3 +23,4 @@ yarn-error.log*
 # the created report files
 public/img/*
 src/*.json
+package-lock.json
