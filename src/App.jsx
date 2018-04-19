@@ -66,8 +66,14 @@ export default class App extends Component {
       if(currentFilter.gebiete.length > 0 && !f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
         return false;
       // 2) Month
-      if(currentFilter.months.length > 0 && !f.Ernte.some(r => currentFilter.months.includes(r)))
-         return false;
+      if(currentFilter.months.length > 0) {
+        // check if there is something to harvest:
+        let bFound = Object.keys(f.Ernte).some(function (key) {
+          return f.Ernte[key].some(r => currentFilter.months.includes(r));
+        });
+        if(!bFound)
+          return false;
+      }
 
       return true;
     });
