@@ -37,7 +37,13 @@ export default class App extends Component {
   }
 
   getRegionen(gebiete) {
-    return this.currentFilter.regionen.filter((k) => {
+    let regionen = []
+    if(this.state.filter.regionen.length > 0)
+      regionen = this.state.filter.regionen;
+    else
+      regionen = Object.keys(DSARegionen);
+
+    return regionen.filter((k) => {
       return DSARegionen[k].some(r => gebiete.includes(r));
     })
   }
