@@ -36,16 +36,11 @@ export default class App extends Component {
     });
   }
 
-  getRegionen(gebiete) {
-    let regionen = []
+  getFilteredRegionen() {
     if(this.state.filter.regionen.length > 0)
-      regionen = this.state.filter.regionen;
+      return this.state.filter.regionen;
     else
-      regionen = Object.keys(DSARegionen);
-
-    return regionen.filter((k) => {
-      return DSARegionen[k].some(r => gebiete.includes(r));
-    })
+      return Object.keys(DSARegionen);
   }
 
   getGebiete(flora) {
@@ -53,14 +48,30 @@ export default class App extends Component {
     const gebieteArrays = flora.map((f) => {
         return f.Gebiete;
     });
+
+    const regionen = this.getFilteredRegionen();
+
     // flattern the array (it is an array of arrays)
     return [].concat(...gebieteArrays)
     // only use unique values
     .filter((val, id, array) => {
        return array.indexOf(val) === id;
     })
+    // only use gebiete that are not filtered by the region:
+    .filter((val) => {
+      return regionen.some(key => DSARegionen[key].includes(val));
+    })
     // sort it (by alph)
     .sort();
+  }
+
+  getRegionen(gebiete) {
+    let filteredGebiete = gebiete
+    if(this.state.filter.gebiete.length > 0)
+      filteredGebiete = this.state.filter.gebiete;
+    return Object.keys(DSARegionen).filter((k) => {
+      return DSARegionen[k].some(r => filteredGebiete.includes(r));
+    });
   }
 
   getUmgebung(flora) {
@@ -82,20 +93,30 @@ export default class App extends Component {
     return flora.filter((f) => {
       // check the filters:
       // 1) Gebiet
-      if(currentFilter.gebiete.length > 0 && !f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
-        return false;
+      if(currentFilter.gebiete.length > 0) {
+        if(!f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
+          return false;
+      }
 
       // 2) Umgebung
-      if(currentFilter.umgebung.length > 0 && !Object.keys(f.Schwierigkeit).some(r => currentFilter.umgebung.includes(r)))
-        return false;
+      if(currentFilter.umgebung.length > 0) {
+        if(!Object.keys(f.Schwierigkeit).some(r => currentFilter.umgebung.includes(r)))
+          return false;
+      }
 
       // 3) Month
       if(currentFilter.months.length > 0) {
         // check if there is something to harvest:
-        let bFound = Object.keys(f.Ernte).some((key) => {
+        return !Object.keys(f.Ernte).some((key) => {
           return f.Ernte[key].some(r => currentFilter.months.includes(r));
         });
-        if(!bFound)
+      }
+
+      // 4) Region
+      if(currentFilter.regionen.length > 0) {
+        if(!f.Gebiete.some((g) => {
+          return currentFilter.regionen.some(key => DSARegionen[key].includes(g));
+          }))
           return false;
       }
 
@@ -106,7 +127,6 @@ export default class App extends Component {
   render() {
     const filteredFlora = this.getFilteredFlora(data.flora, this.state.filter)
     const gebiete = this.getGebiete(filteredFlora);
-    console.log(gebiete);
     const regionen = this.getRegionen(gebiete);
     const umgebung = this.getUmgebung(filteredFlora);
     return (
