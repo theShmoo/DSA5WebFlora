@@ -50,7 +50,7 @@ export default class FilterWidget extends Component {
       const active = selected.length === 0 || selected.includes(i);
       return (
         <OverlayTrigger key={i} placement="bottom" overlay={tooltip}>
-          <Button value={i} active={active} onClick={this.onToggle}>
+          <Button bsStyle="primary" value={i} active={active} onClick={this.onToggle} style={{margin: "0.1em"}}>
               {m.normal}
           </Button>
         </OverlayTrigger>
@@ -60,7 +60,7 @@ export default class FilterWidget extends Component {
       <FormGroup controlId={id}>
         <ControlLabel>{title}</ControlLabel>
         <ButtonToolbar>
-          <ButtonGroup type="checkbox">
+          <ButtonGroup>
             {renderMonths}
           </ButtonGroup>
         </ButtonToolbar>
