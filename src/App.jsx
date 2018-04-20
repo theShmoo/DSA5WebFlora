@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Jumbotron, Grid, Row, Col, PageHeader} from 'react-bootstrap';
 import FilterWidget from './FilterWidget.jsx';
 import DSAMonthPicker from './DSAMonthPicker.jsx';
-import DSAFlora from './DSAFlora.jsx';
+import DSAFloraGrid from './DSAFloraGrid.jsx';
 import {DSARegionen} from './DSAUtils.jsx';
 import './App.css';
 import data from "./data.jsx";
@@ -164,7 +164,7 @@ export default class App extends Component {
             property="months"
             onUserInput={this.onFilterChanged} />
         </Col>
-        <DSAFlora flora={filteredFlora} />
+        <DSAFloraGrid flora={filteredFlora} />
       </Grid>
     );
   }
