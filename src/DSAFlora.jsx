@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Panel, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {DSAMonths} from './DSAUtils.jsx';
 
 export default class DSAFlora extends Component {
 
@@ -37,6 +38,31 @@ export default class DSAFlora extends Component {
     );
   }
 
+  renderMonths(months) {
+    return months.map((id) => {
+        return <span><strong>{DSAMonths[id].normal}</strong> </span>;
+    })
+  }
+
+  getErnte() {
+    const {flora} = this.props;
+    const items = Object.keys(flora.Ernte).map((f, i) => {
+          return (
+            <ListGroupItem key={i}>{f}: <strong>{this.renderMonths(flora.Ernte[f])}</strong></ListGroupItem>
+          )
+        });
+    return (
+      <Panel>
+        <Panel.Heading><Panel.Title toggle>Ernte</Panel.Title></Panel.Heading>
+        <Panel.Collapse>
+          <ListGroup>
+            {items}
+          </ListGroup>
+        </Panel.Collapse>
+      </Panel>
+    );
+  }
+
   render() {
     const {flora} = this.props;
     const {Name, Seite} = flora;
@@ -49,9 +75,10 @@ export default class DSAFlora extends Component {
         </Panel.Heading>
         <Panel.Collapse>
           <ListGroup>
-            <ListGroupItem header="Seite">{Seite}</ListGroupItem>
             {this.getGebiete()}
             {this.getSchwierigkeit()}
+            {this.getErnte()}
+            <ListGroupItem><strong>Seite:</strong> {Seite}</ListGroupItem>
           </ListGroup>
         </Panel.Collapse>
       </Panel>

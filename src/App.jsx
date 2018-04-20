@@ -107,9 +107,10 @@ export default class App extends Component {
       // 3) Month
       if(currentFilter.months.length > 0) {
         // check if there is something to harvest:
-        return !Object.keys(f.Ernte).some((key) => {
+        if(!Object.keys(f.Ernte).some((key) => {
           return f.Ernte[key].some(r => currentFilter.months.includes(r));
-        });
+        }))
+          return false;
       }
 
       // 4) Region
