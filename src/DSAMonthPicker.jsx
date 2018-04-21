@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormGroup, ControlLabel, ButtonToolbar, Button, ButtonGroup, Tooltip, OverlayTrigger} from 'react-bootstrap';
+import { Grid, Col, FormGroup, ControlLabel, Button} from 'react-bootstrap';
+import DSAMonthTooltip from './DSAMonthTooltip.jsx'
 import {DSAMonths} from './DSAUtils.jsx';
 
 export default class FilterWidget extends Component {
@@ -40,30 +41,23 @@ export default class FilterWidget extends Component {
     let id = "filter-" + property;
 
     const renderMonths = DSAMonths.map((m, i) => {
-      const tooltip = (
-        <Tooltip id="tooltip">
-          Irdisch: <strong>{m.irdisch}</strong><br />
-          Thorwal: <strong>{m.thorwaler}</strong><br />
-          Zwerge: <strong>{m.zwerge}</strong>
-        </Tooltip>
-      )
       const active = selected.length === 0 || selected.includes(i);
       return (
-        <OverlayTrigger key={i} placement="bottom" overlay={tooltip}>
-          <Button bsStyle="primary" value={i} active={active} onClick={this.onToggle} style={{margin: "0.1em"}}>
-              {m.normal}
-          </Button>
-        </OverlayTrigger>
+        <Col key={i} xs={3} sm={2}>
+          <DSAMonthTooltip month={i}>
+            <Button bsStyle="primary" value={i} active={active} onClick={this.onToggle} block style={{margin: "0.1em"}}>
+                {m.normal}
+            </Button>
+          </DSAMonthTooltip>
+        </Col>
       );
     });
     return (
       <FormGroup controlId={id}>
         <ControlLabel>{title}</ControlLabel>
-        <ButtonToolbar>
-          <ButtonGroup>
-            {renderMonths}
-          </ButtonGroup>
-        </ButtonToolbar>
+        <Grid fluid>
+          {renderMonths}
+        </Grid>
       </FormGroup>
     );
   }

@@ -7,7 +7,7 @@ export default class DSAFloraGrid extends Component {
   {
     const flora = this.props.flora.map((f, i) => {
       return (
-        <Col sx={6} md={4} key={i}>
+        <Col sx={6} sm={6} md={4} lg={3} key={i}>
           <DSAFlora flora={f} />
         </Col>);
     })

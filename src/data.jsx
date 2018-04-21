@@ -76,7 +76,7 @@ export default
         "Flussauen": 21,
         "Sumpf und Moor": 21
       },
-      "Ernte": {"W6 Büschel": [3]}
+      "Ernte": {"W6 Büschel": [9]}
     },
     {
       "Name": "Axorda-Baum",
@@ -112,7 +112,7 @@ export default
         "Wald": 10,
         "Waldrand": 14
       },
-      "Ernte": {"4W20 Blätter": [3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"4W20 Blätter": [9, 10, 11, 12, 0, 1, 2, 4]}
     },
     {
       "Name": "Blutblatt",
@@ -161,7 +161,7 @@ export default
         "Flussauen": 21,
         "Sumpf und Moor": 9
       },
-      "Ernte": {"1W6 Blüten": [8, 3]}
+      "Ernte": {"1W6 Blüten": [2, 9]}
     },
     {
       "Name": "Cheria-Kaktus",
@@ -187,7 +187,7 @@ export default
         "Steppe": 10,
         "Waldrand": 14
       },
-      "Ernte": {"1W20 Blätter": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"1W20 Blätter": [7, 8, 9, 10, 11, 12, 0, 1, 2, 4]}
     },
     {
       "Name": "Disdychonda",
@@ -301,7 +301,7 @@ export default
         "Küste, Strand": -3,
         "Meer": 11
       },
-      "Ernte": {"1W6 Stein Algen": [7, 8]}
+      "Ernte": {"1W6 Stein Algen": [1, 2]}
     },
     {
       "Name": "Finage",
@@ -314,7 +314,7 @@ export default
         "Regenwald": 13,
         "Wald": 13
       },
-      "Ernte": {"1W20 Triebe": [0, 3, 11, 12]}
+      "Ernte": {"1W20 Triebe": [9, 4, 5, 6]}
     },
     {
       "Name": "Grüne Schleimschlange",
@@ -341,7 +341,7 @@ export default
         "Steppe": 8,
         "Wald": 10
       },
-      "Ernte": {"2W6 Blätter": [0, 1, 2, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {"2W6 Blätter": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Hiradwurz",
@@ -367,7 +367,7 @@ export default
         "Wald": 8,
         "Waldrand": 6
       },
-      "Ernte": {"2W6 x (2W+5 bzw. 2W+3)": [7, 8]}
+      "Ernte": {"2W6 x (2W+5 bzw. 2W+3)": [1, 2]}
     },
     {
       "Name": "Höllenkraut",
@@ -392,7 +392,7 @@ export default
       "Schwierigkeit": {
         "Wald": 15
       },
-      "Ernte": {"1W6 x 1W3 Kerne": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {"1W6 x 7W3 Kerne": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
     },
     {
       "Name": "Ilmenblatt",
@@ -407,7 +407,7 @@ export default
         "Grasland, Wiesen": 6,
         "Wald": 6
       },
-      "Ernte": {"1W20 Blätter und Blüten": [9, 4]}
+      "Ernte": {"1W20 Blätter und Blüten": [3, 10]}
     },
     {
       "Name": "Iribaarslilie",
@@ -450,7 +450,7 @@ export default
         "Grasland, Wiesen": 15,
         "Wald": 11
       },
-      "Ernte": {"1 Wurzel": [5, 6, 7, 8, 9, 10]}
+      "Ernte": {"1 Wurzel": [11, 12, 0, 1, 2, 3, 4]}
     },
     {
       "Name": "Kairan",
@@ -478,7 +478,7 @@ export default
         "Küste, Strand": 12,
         "Waldrand": 12
       },
-      "Ernte": {"2W6 Knospen": [2, 3, 4, 5, 6, 7, 8, 9]}
+      "Ernte": {"2W6 Knospen": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Khômknolle",
@@ -506,7 +506,7 @@ export default
         "Gebirge": 12,
         "Hochland": 12
       },
-      "Ernte": {"2W6 Stängel": [3, 4, 5, 6, 7]}
+      "Ernte": {"2W6 Stängel": [9, 10, 11, 12, 0, 1]}
     },
     {
       "Name": "Kukuka",
@@ -530,7 +530,7 @@ export default
         "Fluss- und Seeufer, Teiche": 13,
         "Sumpf und Moor": 21
       },
-      "Ernte": {"je nach Lotos": [2, 3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"je nach Lotos": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
     },
     {
       "Name": "Lotos, Färber-",
@@ -541,7 +541,7 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 13
       },
-      "Ernte": {"2W6+1 Blüten": [4,5,6]}
+      "Ernte": {"2W6+1 Blüten": [10, 11, 12, 0]}
     },
     {
       "Name": "Lotos, Grauer",
@@ -553,7 +553,7 @@ export default
         "Fluss- und Seeufer, Teiche": 16,
         "Sumpf und Moor": 24
       },
-      "Ernte": {"1W6+1 Blüten": [2, 3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"1W6+1 Blüten": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
     },
     {
       "Name": "Lotos, Purpurner",
@@ -564,7 +564,7 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 15
       },
-      "Ernte": {"1W6+1 Blüten": [4,5,6]}
+      "Ernte": {"1W6+1 Blüten": [10, 11, 12, 0]}
     },
     {
       "Name": "Lotos, Schwarzer",
@@ -575,7 +575,7 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 22
       },
-      "Ernte": {"1W6 Blüten": [4,5,6]}
+      "Ernte": {"1W6 Blüten": [10, 11, 12, 0]}
     },
     {
       "Name": "Lotos, Weißer",
@@ -587,7 +587,7 @@ export default
         "Fluss- und Seeufer, Teiche": 18,
         "Sumpf und Moor": 26
       },
-      "Ernte": {"1W6+1 Blüten": [4,5,6]}
+      "Ernte": {"1W6+1 Blüten": [10, 11, 12, 0]}
     },
     {
       "Name": "Lotos, Weißgelber",
@@ -598,7 +598,7 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 14
       },
-      "Ernte": {"1W3 Blüten": [4,5,6]}
+      "Ernte": {"1W3 Blüten": [10, 11, 12, 0]}
     },
     {
       "Name": "Lulanie",
@@ -610,7 +610,7 @@ export default
         "Wald": 13,
         "Waldrand": 19
       },
-      "Ernte": {"1 Blüte": [5, 6, 7]}
+      "Ernte": {"1 Blüte": [11, 12, 0, 1]}
     },
     {
       "Name": "Madablüte",
@@ -632,7 +632,7 @@ export default
         "keine natürlichen Vorkommen"
       ],
       "Schwierigkeit": {},
-      "Ernte": {"1 Blüte": [7]}
+      "Ernte": {"1 Blüte": [1]}
     },
     {
       "Name": "Menchal-Kaktus",
@@ -660,7 +660,7 @@ export default
         "Wald": 10,
         "Regenwald": 18
       },
-      "Ernte": {"2W20 Früchte": [8, 9]}
+      "Ernte": {"2W20 Früchte": [2, 3]}
     },
     {
       "Name": "Messergras",
@@ -686,7 +686,7 @@ export default
         "Flussauen": 12,
         "Sumpf und Moor": 16
       },
-      "Ernte": {"2W6 Kolben": [4, 5, 6, 7, 8]}
+      "Ernte": {"2W6 Kolben": [10, 11, 12, 0, 1, 2]}
     },
     {
       "Name": "Mirbelstein",
@@ -702,7 +702,7 @@ export default
         "Grasland, Wiesen": 16,
         "Wald": 12
       },
-      "Ernte": {"1 Wurzelknolle": [3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"1 Wurzelknolle": [9, 10, 11, 12, 0, 1, 2, 3, 4]}
     },
     {
       "Name": "Mirhamer Seidenliane",
@@ -716,7 +716,7 @@ export default
         "Fluss- und Seeufer, Teiche": 20,
         "Regenwald": 12
       },
-      "Ernte": {"1 Ranke mit 2-3 Knoten": [1,2,3,4]}
+      "Ernte": {"1 Ranke mit 2-3 Knoten": [7, 8, 9, 10]}
     },
     {
       "Name": "Mohn, Bleich-",
@@ -727,7 +727,7 @@ export default
       "Schwierigkeit": {
         "Gebirge": 13
       },
-      "Ernte": {"1W6 Samenkapseln": [7]}
+      "Ernte": {"1W6 Samenkapseln": [1]}
     },
     {
       "Name": "Mohn, Bunter",
@@ -742,7 +742,7 @@ export default
         "Fluss- und Seeufer, Teiche": -1,
         "Waldrand": 3
       },
-      "Ernte": {"1 Samenkapsel": [9]}
+      "Ernte": {"1 Samenkapsel": [3]}
     },
     {
       "Name": "Mohn, Grauer",
@@ -769,7 +769,7 @@ export default
         "Fluss- und Seeufer, Teiche": 19,
         "Wald": 19
       },
-      "Ernte": {"1 Samenkapsel": [5]}
+      "Ernte": {"1 Samenkapsel": [11]}
     },
     {
       "Name": "Mohn, Schwarzer",
@@ -780,7 +780,7 @@ export default
       "Schwierigkeit": {
         "Palakar": 6
       },
-      "Ernte": {"2 Blätter": [8, 9, 10], "1 Kapsel": [10]}
+      "Ernte": {"2 Blätter": [2, 3, 4], "1 Kapsel": [4]}
     },
     {
       "Name": "Mohn, Tiger-",
@@ -795,7 +795,7 @@ export default
         "Flussauen": 18,
         "Waldrand": 18
       },
-      "Ernte": {"1 Samenkapsel": [9]}
+      "Ernte": {"1 Samenkapsel": [3]}
     },
     {
       "Name": "Morgendornstrauch",
@@ -844,7 +844,7 @@ export default
         "Gebirge": 14,
         "Wald": 14
       },
-      "Ernte": {"1W20+2 Blüten": [6], "2W20+10 Blätter": [3]}
+      "Ernte": {"1W20+2 Blüten": [0], "2W20+10 Blätter": [9]}
     },
     {
       "Name": "Olginwurz",
@@ -897,7 +897,7 @@ export default
         "Sumpf und Moor": 14,
         "Wald": 22
       },
-      "Ernte": {" 1 Pilzhaut": [2, 3, 4, 9, 10, 11]}
+      "Ernte": {" 7 Pilzhaut": [9, 10, 11, 2, 3, 4]}
     },
     {
       "Name": "Phosphorpilz",
@@ -920,7 +920,7 @@ export default
       "Schwierigkeit": {
         "Wald": 20
       },
-      "Ernte": {"1 Wurzel": [2, 3, 4, 5, 6, 7, 8, 9]}
+      "Ernte": {"1 Wurzel": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Quinja",
@@ -933,7 +933,7 @@ export default
         "Wald": 10,
         "Waldrand": 14
       },
-      "Ernte": {"1W3+2 Beeren": [4, 5, 6, 7, 8, 9]}
+      "Ernte": {"1W3+2 Beeren": [10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Rahjalieb",
@@ -947,7 +947,7 @@ export default
         "Regenwald": 7,
         "Wald": 9
       },
-      "Ernte": {"2W6 Blätter": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0]}
+      "Ernte": {"2W6 Blätter": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5, 6]}
     },
     {
       "Name": "Rattenpilz",
@@ -967,7 +967,7 @@ export default
         "Wald": 23,
         "Waldrand": 23
       },
-      "Ernte": {"1 Pilz": [0,1,2,4,9,10,11,12]}
+      "Ernte": {"1 Pilz": [0, 1, 2, 3, 8, 9, 10, 11, 12]}
     },
     {
       "Name": "Rauschgurke",
@@ -980,7 +980,7 @@ export default
         "Wald": 7,
         "Waldrand": 11
       },
-      "Ernte": {"3W6 Gurken": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+      "Ernte": {"3W6 Gurken": [7, 8, 9, 10, 11, 12, 0, 1, 2, 3, 4]}
     },
     {
       "Name": "Rote Pfeilblüte",
@@ -993,7 +993,7 @@ export default
         "Regenwald": 11,
         "Wald": 23
       },
-      "Ernte": {"1W6 Blüten": [3, 4, 5]}
+      "Ernte": {"1W6 Blüten": [9, 10, 11]}
     },
     {
       "Name": "Roter Drachenschlund",
@@ -1030,7 +1030,7 @@ export default
         "Wald": 2,
         "Waldrand": 2
       },
-      "Ernte": {"4W20 Blätter": [4, 5, 6, 7, 8, 9, 10, 11, 12, 0], "1W20 Blüten": [4, 5], "1W20 Früchte": [8, 9], "1W3 Flux Saft": [2, 3, 4, 5, 6] }
+      "Ernte": {"4W20 Blätter": [10, 11, 12, 0], "1W20 Blüten": [10, 11], "1W20 Früchte": [2, 3], "1W3 Flux Saft": [8, 9, 10, 11, 12, 0] }
     },
     {
       "Name": "Schlangenzünglein",
@@ -1059,7 +1059,7 @@ export default
         "Fluss- und Seeufer, Teiche": 22,
         "Waldrand": 22
       },
-      "Ernte": {"1W6 Blüten": [4, 5]}
+      "Ernte": {"1W6 Blüten": [10, 11]}
     },
     {
       "Name": "Schleimiger Sumpfknöterich",
@@ -1072,7 +1072,7 @@ export default
         "Wald": 11,
         "Waldrand": 19
       },
-      "Ernte": {"2W6 Pilze": [6, 7, 8, 9]}
+      "Ernte": {"2W6 Pilze": [0, 1, 2, 3]}
     },
     {
       "Name": "Schlinggras",
@@ -1095,7 +1095,7 @@ export default
         "Fluss- und Seeufer, Teiche": 19,
         "Flussauen": 19
       },
-      "Ernte": {"/ 8 1 Schwamm / 1W2 Samenkörper": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {"1 Schwamm": [2],  "1W2 Samenkörper": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
     },
     {
       "Name": "Schwarzer Wein",
@@ -1121,7 +1121,7 @@ export default
         "Grasland, Wiesen": 10,
         "Wald": 18
       },
-      "Ernte": {"1W20 Knollen": [4, 5, 6, 7]}
+      "Ernte": {"1W20 Knollen": [10, 11, 12, 0, 1]}
     },
     {
       "Name": "Talaschin",
@@ -1163,7 +1163,7 @@ export default
         "Sumpf und Moor": 8,
         "Wald": 8
       },
-      "Ernte": {"1 Pflanze": [4, 5, 6, 7, 8, 9]}
+      "Ernte": {"1 Pflanze": [10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Thonnys",
@@ -1175,7 +1175,7 @@ export default
         "Steppe": "+21 / 28",
         "Wald": "+21 / 28"
       },
-      "Ernte": {"1W6+4 Blätter": [3, 4, 5, 6, 7, 8, 9]}
+      "Ernte": {"1W6+4 Blätter": [9, 10, 11, 12, 0, 1, 2, 3]}
     },
     {
       "Name": "Traschbart",
@@ -1226,7 +1226,7 @@ export default
         "Wald": 6,
         "Waldrand": 10
       },
-      "Ernte": {"1W20 Blüten": [8, 9]}
+      "Ernte": {"1W20 Blüten": [2, 3]}
     },
     {
       "Name": "Vierblättrige Einbeere",
@@ -1247,7 +1247,7 @@ export default
         "Wald": 7,
         "Waldrand": 7
       },
-      "Ernte": {"1W6 Beeren": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
+      "Ernte": {"1W6 Beeren": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
     },
     {
       "Name": "Vragieswurzel",
@@ -1261,7 +1261,7 @@ export default
         "Regenwald": 10,
         "Wald": 14
       },
-      "Ernte": {"1 Wurzel": [8, 9, 10]}
+      "Ernte": {"1 Wurzel": [2, 3, 4]}
     },
     {
       "Name": "Waldwebe",
@@ -1284,7 +1284,7 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 9
       },
-      "Ernte": {"2W20 Blüten": [5, 6, 7, 8], "1 Frucht": [7, 8, 9]}
+      "Ernte": {"2W20 Blüten": [11, 12, 0, 1, 2], "1 Frucht": [1, 2, 3]}
     },
     {
       "Name": "Winselgras",
@@ -1310,7 +1310,7 @@ export default
         "Steppe": 7,
         "Grasland, Wiesen": 9
       },
-      "Ernte": {"1W6+4 Blätter": [0,1,2,4,9,10,11,12]}
+      "Ernte": {"1W6+4 Blätter": [0, 1, 2, 3, 8, 9, 10, 11, 12]}
     },
     {
       "Name": "Würgedattel",
@@ -1335,7 +1335,7 @@ export default
         "Gebirge": 14,
         "Wald": 10
       },
-      "Ernte": {"1W6 Nüsse": [10]}
+      "Ernte": {"1W6 Nüsse": [4]}
     },
     {
       "Name": "Zithabar",
@@ -1354,7 +1354,7 @@ export default
         "Wald": 21,
         "Waldrand": 13
       },
-      "Ernte": {"3W20 Blätter": [0, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {"3W20 Blätter": [9, 10, 11, 12, 0]}
     },
     {
       "Name": "Zunderschwamm",
@@ -1381,7 +1381,7 @@ export default
         "Sumpf und Moor": 21,
         "Wald": 9
       },
-      "Ernte": {"12 Stängel": [0, 1, 2, 3, 4, 5, 6, 11, 12]}
+      "Ernte": {"12 Stängel": [5, 6, 7, 8, 9, 10, 11, 12, 0]}
     }
   ]
 }

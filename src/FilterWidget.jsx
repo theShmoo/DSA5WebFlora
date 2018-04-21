@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Select from "react-select";
-import { FormGroup, ControlLabel} from 'react-bootstrap';
+import { FormGroup, ControlLabel, OverlayTrigger, Popover} from 'react-bootstrap';
 
 export default class FilterWidget extends Component {
 
@@ -32,9 +32,17 @@ export default class FilterWidget extends Component {
   render()
   {
     let id = "filter-" + this.props.property;
+    const tooltip = (
+          <Popover id="popover" title={this.props.tooltip ? this.props.tooltip : this.props.title} style={{ width: 800 }}>
+            {this.props.children ? this.props.children : this.props.tooltip ? this.props.tooltip : this.props.title}
+          </Popover>
+        );
+
     return (
       <FormGroup controlId={id}>
-        <ControlLabel>{this.props.title}</ControlLabel>
+        <OverlayTrigger placement="bottom" trigger="click" overlay={tooltip}>
+          <ControlLabel style={{cursor: "pointer"}}>{this.props.title}</ControlLabel>
+        </OverlayTrigger>
         <Select
           multi={true}
           value={this.props.selected}

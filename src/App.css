@@ -26,6 +26,11 @@
   z-index: 999 !important;
 }
 
+/* The max width is dependant on the container (more info below) */
+.popover{
+    max-width: 50%; /* Max Width of the popover (depending on the container!) */
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Grid, Row, Col, PageHeader} from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, PageHeader, Image} from 'react-bootstrap';
 import FilterWidget from './FilterWidget.jsx';
 import DSAMonthPicker from './DSAMonthPicker.jsx';
 import DSAFloraGrid from './DSAFloraGrid.jsx';
@@ -14,6 +14,7 @@ export default class App extends Component {
 
     this.state = {
       filter: {
+        names: [],
         regionen: [],
         gebiete: [],
         umgebung: [],
@@ -92,6 +93,11 @@ export default class App extends Component {
   getFilteredFlora(flora, currentFilter) {
     return flora.filter((f) => {
       // check the filters:
+      // 0) Name
+      if(currentFilter.names.length > 0) {
+        if(!currentFilter.names.includes(f.Name))
+          return false;
+      }
       // 1) Gebiet
       if(currentFilter.gebiete.length > 0) {
         if(!f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
@@ -127,6 +133,7 @@ export default class App extends Component {
 
   render() {
     const filteredFlora = this.getFilteredFlora(data.flora, this.state.filter)
+    const names = filteredFlora.map(f => f.Name);
     const gebiete = this.getGebiete(filteredFlora);
     const regionen = this.getRegionen(gebiete);
     const umgebung = this.getUmgebung(filteredFlora);
@@ -136,35 +143,59 @@ export default class App extends Component {
           <h1>DSA 5 Web Flora</h1>
         </Jumbotron>
         <Row>
-          <PageHeader>Filter</PageHeader>
+          <PageHeader>Filter <small>Klicke auf den Filter-Titel um mehr informationen zu erhalten.</small></PageHeader>
         </Row>
-        <Col xs={12} md={4}>
-          <FilterWidget options={regionen}
-            title="Regionen"
-            selected={this.state.filter.regionen}
-            property="regionen"
-            onUserInput={this.onFilterChanged}/>
-        </Col>
-        <Col xs={12} md={4}>
-          <FilterWidget options={gebiete}
-            title="Gebiete"
-            selected={this.state.filter.gebiete}
-            property="gebiete"
-            onUserInput={this.onFilterChanged}/>
-        </Col>
-        <Col xs={12} md={4}>
-          <FilterWidget options={umgebung}
-            title="Umgebung"
-            selected={this.state.filter.umgebung}
-            property="umgebung"
-            onUserInput={this.onFilterChanged}/>
-        </Col>
-        <Col xs={12} md={12}>
+        <Row>
+          <Col xs={12} sm={6} md={3}>
+            <FilterWidget options={names}
+                title="Pflanze"
+                selected={this.state.filter.names}
+                property="names"
+                onUserInput={this.onFilterChanged} >
+                Suche nach einer oder mehreren speziellen Pflanzenarten (z.B.: Alraune). <br/>
+                Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
+              </FilterWidget>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <FilterWidget options={regionen}
+              title="Regionen"
+              selected={this.state.filter.regionen}
+              property="regionen"
+              onUserInput={this.onFilterChanged}>
+              Suche nach einer oder mehreren speziellen Regionen (z.B.: Mittelreich). <br/>
+              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
+              <p>
+              <Image src="./map.jpg" title="Karte von Regionen" alt="Karte von Regionen" responsive />
+              </p>
+            </FilterWidget>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <FilterWidget options={gebiete}
+              title="Gebiete"
+              selected={this.state.filter.gebiete}
+              property="gebiete"
+              onUserInput={this.onFilterChanged}>
+              Suche nach einem oder mehreren speziellen Gebieten (z.B.: Neunaugensee). <br/>
+              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
+            </FilterWidget>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <FilterWidget options={umgebung}
+              title="Umgebung"
+              selected={this.state.filter.umgebung}
+              property="umgebung"
+              onUserInput={this.onFilterChanged}>
+              Suche nach einer oder mehreren Umgebungen (z.B.: Waldrand). <br/>
+              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
+            </FilterWidget>
+          </Col>
+        </Row>
+        <Row>
           <DSAMonthPicker title="Erntezeit"
             selected={this.state.filter.months}
             property="months"
             onUserInput={this.onFilterChanged} />
-        </Col>
+        </Row>
         <DSAFloraGrid flora={filteredFlora} />
       </Grid>
     );

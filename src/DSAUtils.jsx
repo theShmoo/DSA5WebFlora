@@ -93,7 +93,7 @@ export const DSAMonths = [
   ];
 
   export const DSARegionen = {
-      "Hoher Norder": [
+      "Hoher Norden": [
         "Ehernes Schwert",
         "Grüne Ebene",
         "Eis",
