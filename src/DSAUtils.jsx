@@ -272,7 +272,10 @@ export const DSAMonths = [
         "Zwischen Lowangen-Selem",
         "Küste südlich von Thorwal",
         "Hochgebirge Aventuriens",
-        "Westküste Aventuriens"
+        "Westküste Aventuriens",
+        "Windhag",
+        "Phecanowald",
+        "Windhaggebirge"
       ],
       "Nordosten": [
         "Bornland",

@@ -7,7 +7,7 @@ export default class DSAMonthTooltip extends Component {
   {
     const m = DSAMonths[this.props.month];
     const tooltip = (
-        <Tooltip id="tooltip">
+        <Tooltip id="dsa-month-tooltip">
           Irdisch: <strong>{m.irdisch}</strong><br />
           Thorwal: <strong>{m.thorwaler}</strong><br />
           Zwerge: <strong>{m.zwerge}</strong>

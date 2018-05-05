@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Col, FormGroup, ControlLabel, Button} from 'react-bootstrap';
-import DSAMonthTooltip from './DSAMonthTooltip.jsx'
-import {DSAMonths} from './DSAUtils.jsx';
+import DSAMonthTooltip from './DSAMonthTooltip'
+import {DSAMonths} from './DSAUtils';
+import DSAMonth from './DSAMonth'
 
 export default class FilterWidget extends Component {
 
@@ -22,7 +23,6 @@ export default class FilterWidget extends Component {
     const {property, selected} = this.props;
     const v = Number(event.target.value);
 
-
     filter[property] = selected;
     const index = selected.indexOf(v);
 
@@ -35,12 +35,9 @@ export default class FilterWidget extends Component {
     this.props.onUserInput(filter);
   }
 
-  render()
-  {
-    const {selected, property, title} = this.props;
-    let id = "filter-" + property;
-
-    const renderMonths = DSAMonths.map((m, i) => {
+  renderMonths() {
+    const {selected} = this.props;
+    return DSAMonths.map((m, i) => {
       const active = selected.length === 0 || selected.includes(i);
       return (
         <Col key={i} xs={3} sm={2}>
@@ -52,11 +49,23 @@ export default class FilterWidget extends Component {
         </Col>
       );
     });
+  }
+
+  renderTitle() {
+    const {selected, title} = this.props;
+    const monthsInTitle = selected.length === 0 ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] : selected;
+    return <ControlLabel>{title} - <DSAMonth months={monthsInTitle} /></ControlLabel>
+  }
+
+  render()
+  {
+    const id = "filter-" + this.props.property;
+
     return (
       <FormGroup controlId={id}>
-        <ControlLabel>{title}</ControlLabel>
+        {this.renderTitle()}
         <Grid fluid>
-          {renderMonths}
+          {this.renderMonths()}
         </Grid>
       </FormGroup>
     );

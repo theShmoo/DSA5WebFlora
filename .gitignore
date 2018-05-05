@@ -26,3 +26,5 @@ src/*.json
 package-lock.json
 DSAWebFlora 1.0/
 DSAWebFlora 1.0.zip
+dsa5webflora.sublime-workspace
+dsa5webflora.sublime-project

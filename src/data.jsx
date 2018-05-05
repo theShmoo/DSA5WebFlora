@@ -1,9 +1,12 @@
-export default
-{
+export default {
   "flora": [
     {
       "Name": "Alraune",
-      "Seite": 227,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 227,
+        "Regelwerk": 345,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Alraune.html"
+      },
       "Gebiete": [
         "nördlich der Khôm"
       ],
@@ -11,11 +14,43 @@ export default
         "Fluss- und Seeufer, Teiche": 17,
         "Waldrand": 17
       },
-      "Ernte": {"1 Pflanze": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Pflanze": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Wirkung": "Alraunen werden vor allem in der Alchimie verwendet.",
+      "Preis": "3 / 5 Silbertaler"
     },
     {
       "Name": "Alveranie",
-      "Seite": 228,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 228,
+        "Aventurischer Almanach": 173,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Alveranie.html"
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
@@ -33,11 +68,40 @@ export default
         "Wald": 11,
         "Waldrand": 11
       },
-      "Ernte": {"12 Blätter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
+      "Ernte": {
+        "12 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "Suchschwierigkeit": -6,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Wirkung": "Der Alveranie sagt man keine bestimmte Wirkung nach, aber in ihrer Nähe sollen stets wundersame Ereignisse stattfinden. Für Zwölfgöttergläubige ist das Auffinden einer Alveranie ein gutes Zeichen. Die Pflanze ist schier außerordentlich schwer zu töten (100 LeP), wurde sie zerstört, kann man sie allein durch eine göttergefällige Tat erneut erblühen lassen.",
+      "Preis": "wird nicht gehandelt (aber sicherlich bis zu 100 Dukaten)"
     },
     {
       "Name": "Arganstrauch",
-      "Seite": 228,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 228
+      },
       "Gebiete": [
         "Regengebirge",
         "Mysobien",
@@ -48,22 +112,58 @@ export default
         "Regenwald": 8,
         "Wald": 20
       },
-      "Ernte": {"1 Wurzel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Wurzel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Atan-Kiefer",
-      "Seite": 228,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 228
+      },
       "Gebiete": [
         "Ehernes Schwert"
       ],
       "Schwierigkeit": {
         "Gebirge": 14
       },
-      "Ernte": {"1W20 Stein Rinde": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W20 Stein Rinde": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Atmon",
-      "Seite": 229,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 229
+      },
       "Gebiete": [
         "Khômrand",
         "Gor",
@@ -76,22 +176,60 @@ export default
         "Flussauen": 21,
         "Sumpf und Moor": 21
       },
-      "Ernte": {"W6 Büschel": [9]}
+      "Ernte": {
+        "W6 Büschel": [
+          9
+        ]
+      }
     },
     {
       "Name": "Axorda-Baum",
-      "Seite": 229,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 229,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Axordabaum.html",
+        "Regelwerk": 345
+      },
       "Gebiete": [
         "Maraskan"
       ],
       "Schwierigkeit": {
         "Gebirge": 20
       },
-      "Ernte": {"70/210 Stein Rinde": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "70/210 Stein Rinde": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Wirkung": "Gegenmittel gegen Zorganpocken",
+      "Preis": "16 / 80 Silbertaler (solange kein akuter Bedarf herrscht); beim Ausbruch von Zorganpocken leichtmit Gold aufgewogen"
     },
     {
       "Name": "Basilamine",
-      "Seite": 230,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 230
+      },
       "Gebiete": [
         "Orkland"
       ],
@@ -99,12 +237,30 @@ export default
         "Wald": 19,
         "Waldrand": 23
       },
-      "Ernte": {"1W20+10 Schoten": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]},
+      "Ernte": {
+        "1W20+10 Schoten": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
       "Sonstiges": "im Ing -10"
     },
     {
       "Name": "Belmart",
-      "Seite": 230,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 230
+      },
       "Gebiete": [
         "nördlich von Grangor-Elburum"
       ],
@@ -112,22 +268,53 @@ export default
         "Wald": 10,
         "Waldrand": 14
       },
-      "Ernte": {"4W20 Blätter": [9, 10, 11, 12, 0, 1, 2, 4]}
+      "Ernte": {
+        "4W20 Blätter": [
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          4
+        ]
+      }
     },
     {
       "Name": "Blutblatt",
-      "Seite": 230,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 230
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
       "Schwierigkeit": {
         "astrale Quellen": 12
       },
-      "Ernte": {"1W20+2/10 AsP der Quelle Zweige": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W20+2/10 AsP der Quelle Zweige": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Boronie",
-      "Seite": 231,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 231
+      },
       "Gebiete": [
         "Südaventurien"
       ],
@@ -135,11 +322,29 @@ export default
         "Grasland, Wiesen": 14,
         "Regenwald": 6
       },
-      "Ernte": {"5 Blüten": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "5 Blüten": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Boronsschlinge",
-      "Seite": 231,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 231
+      },
       "Gebiete": [
         "Süd- und Mittelaventurien"
       ],
@@ -147,11 +352,17 @@ export default
         "Regenwald": 31,
         "Wald": 31
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Carlog",
-      "Seite": 232,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 232,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Carlog.html",
+        "Regelwerk": 345
+      },
       "Gebiete": [
         "Küste südlich von Thorwal",
         "Tobrien"
@@ -161,11 +372,30 @@ export default
         "Flussauen": 21,
         "Sumpf und Moor": 9
       },
-      "Ernte": {"1W6 Blüten": [2, 9]}
+      "Ernte": {
+        "1W6 Blüten": [
+          2,
+          9
+        ]
+      },
+      "Suchschwierigkeit": -1,
+      "Bestimmungsschwierigkeit": -1,
+      "Anwendungen": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "Wirkung": "Nach Einnahme von Carlog erhält der Held für 1 Stunde den Vorteil Dunkelsicht I. Verfügt er schon über Dunkelsicht I, so bekommt er Stufe II. Tagsüber erscheint nach der Einnahme alles in so grellem Licht, sodass der Held einen Sichtmodifikator von 1 erhält.",
+      "Preis": "2 / 2,2 Silbertaler"
     },
     {
       "Name": "Cheria-Kaktus",
-      "Seite": 232,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 232
+      },
       "Gebiete": [
         "Südliche Khôm",
         "Shadif",
@@ -174,11 +404,29 @@ export default
       "Schwierigkeit": {
         "Wüste und Wüstenrand": 12
       },
-      "Ernte": {"1W3 x 3W+8 Stacheln": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W3 x 3W+8 Stacheln": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Chonchinis",
-      "Seite": 233,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 233
+      },
       "Gebiete": [
         "Garetien bis Echsensümpfe"
       ],
@@ -187,11 +435,26 @@ export default
         "Steppe": 10,
         "Waldrand": 14
       },
-      "Ernte": {"1W20 Blätter": [7, 8, 9, 10, 11, 12, 0, 1, 2, 4]}
+      "Ernte": {
+        "1W20 Blätter": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          4
+        ]
+      }
     },
     {
       "Name": "Disdychonda",
-      "Seite": 233,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 233
+      },
       "Gebiete": [
         "Echsensümpfe",
         "Südl. Eternen",
@@ -201,11 +464,31 @@ export default
         "Regenwald": 21,
         "Wald": 21
       },
-      "Ernte": {"4 Blätter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "4 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Donf",
-      "Seite": 234,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 234,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Donf.html",
+        "Regelwerk": 345
+      },
       "Gebiete": [
         "südlich von Gerasim"
       ],
@@ -214,11 +497,41 @@ export default
         "Flussauen": 22,
         "Sumpf und Moor": 10
       },
-      "Ernte": {"1 Stängel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Stängel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": 0,
+      "Bestimmungsschwierigkeit": 3,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Gegenmittel gegen Sumpffieber",
+      "Preis": "2 / 4 Silbertaler"
     },
     {
       "Name": "Dornrose",
-      "Seite": 235,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 235
+      },
       "Gebiete": [
         "Oron"
       ],
@@ -226,11 +539,29 @@ export default
         "Grasland, Wiesen": 5,
         "Wald": 7
       },
-      "Ernte": {"1W6 Blüten": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Blüten": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Efeuer",
-      "Seite": 235,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 235
+      },
       "Gebiete": [
         "Nord- und Mittelaventurien"
       ],
@@ -239,11 +570,17 @@ export default
         "Höhlen": 8,
         "Ruinen": 8
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Egelschreck",
-      "Seite": 235,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 235,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Egelschreck.html",
+        "Regelwerk": 345
+      },
       "Gebiete": [
         "Zwischen Lowangen-Selem"
       ],
@@ -253,11 +590,29 @@ export default
         "Sumpf und Moor": 8,
         "Waldrand": 14
       },
-      "Ernte": {"2W20 Blätter": [1]}
+      "Ernte": {
+        "2W20 Blätter": [
+          1
+        ]
+      },
+      "Suchschwierigkeit": 0,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        6
+      ],
+      "Wirkung": "vertreibt Parasiten",
+      "Preis": "4 / 12 Silbertaler"
     },
     {
       "Name": "Eitriger Krötenschemel",
-      "Seite": 236,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 236
+      },
       "Gebiete": [
         "südlich von Riva"
       ],
@@ -266,22 +621,44 @@ export default
         "Sumpf und Moor": 6,
         "Wald": 18
       },
-      "Ernte": {"2W6 Pilzhäute": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "2W6 Pilzhäute": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Feuer-/ Efferdsmoos",
-      "Seite": 236,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 236
+      },
       "Gebiete": [
         "Nord- und Mittelaventurien"
       ],
       "Schwierigkeit": {
         "Höhlen": 19
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Feuerschlick",
-      "Seite": 237,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 237
+      },
       "Gebiete": [
         "Elburische Küste"
       ],
@@ -289,11 +666,29 @@ export default
         "Küste, Strand": 8,
         "Meer": 22
       },
-      "Ernte": {"1W6 Stein Algen": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Stein Algen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Feurschlick (leuchtend)",
-      "Seite": 237,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 237
+      },
       "Gebiete": [
         "Elburische Küste"
       ],
@@ -301,11 +696,18 @@ export default
         "Küste, Strand": -3,
         "Meer": 11
       },
-      "Ernte": {"1W6 Stein Algen": [1, 2]}
+      "Ernte": {
+        "1W6 Stein Algen": [
+          1,
+          2
+        ]
+      }
     },
     {
       "Name": "Finage",
-      "Seite": 238,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 238
+      },
       "Gebiete": [
         "südlich von Neetha-Thalusa"
       ],
@@ -314,11 +716,20 @@ export default
         "Regenwald": 13,
         "Wald": 13
       },
-      "Ernte": {"1W20 Triebe": [9, 4, 5, 6]}
+      "Ernte": {
+        "1W20 Triebe": [
+          9,
+          4,
+          5,
+          6
+        ]
+      }
     },
     {
       "Name": "Grüne Schleimschlange",
-      "Seite": 238,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 238
+      },
       "Gebiete": [
         "Orkland",
         "Svelltsümpfe",
@@ -328,11 +739,17 @@ export default
         "Flussauen": 20,
         "Sumpf und Moor": 6
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Gulmond",
-      "Seite": 238,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 238,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Gulmond.html",
+        "Regelwerk": 345
+      },
       "Gebiete": [
         "nördich von Nostria-Vallusa"
       ],
@@ -341,11 +758,37 @@ export default
         "Steppe": 8,
         "Wald": 10
       },
-      "Ernte": {"2W6 Blätter": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "2W6 Blätter": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "Suchschwierigkeit": -2,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "Wirkung": "1 Anwendung lässt den Konsumenten 12 Stunden lang die Abzüge von zwei Stufen Betäubung ignorieren. Bei Stufe IV wird der Konsument dennoch handlungsunfähig.",
+      "Preis": "6 / 6,2 Silbertaler"
     },
     {
       "Name": "Hiradwurz",
-      "Seite": 239,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 239
+      },
       "Gebiete": [
         "Amhalassih",
         "Mhanadistan",
@@ -354,11 +797,31 @@ export default
       "Schwierigkeit": {
         "Steppe": "+16/+13"
       },
-      "Ernte": {"1 Wurzel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Wurzel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Hollbeere",
-      "Seite": 240,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 240,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Hollbeere.html",
+        "Die Streitenden Königreiche": 102
+      },
       "Gebiete": [
         "Albernia",
         "Nostria"
@@ -367,11 +830,43 @@ export default
         "Wald": 8,
         "Waldrand": 6
       },
-      "Ernte": {"2W6 x (2W+5 bzw. 2W+3)": [1, 2]}
+      "Ernte": {
+        "2W6 x (2W+5 bzw. 2W+3)": [
+          1,
+          2
+        ]
+      },
+      "Suchschwierigkeit": -2,
+      "Bestimmungsschwierigkeit": -1,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "Wirkung": "Bei jeder gefunden Anwendung der Hollbeere muss entschieden werden, ob es sich um Beeren oder Blätter handelt. Die Beeren sind leicht giftig und können heftiges Erbrechen auslösen (keine nächtliche Regeneration). Werden sie vergoren, dann stellen sie ein potentes Brechmittel dar. Die Blätter der Hollbeerenstrauchs ergeben getrocknet und aufgebrüht einen Tee, der zu ruhigem und erholsamem Schlaf führt. Ein Sud aus 1 Anwendung erlaubt die Wiederholung des LeP-Wurfs während der nächsten Regenerationsphase (wobei das höhere Ergebnis des Wurfs zählt).",
+      "Preis": "4 / 8 Silbertaler",
+      "Produkte": {
+        "Hollbeerenbrechmittel": {
+          "Gift": {
+            "Wirkung": "Opfer übergibt sich, keine nächtliche Regeneration / Opfer übergibt sich",
+            "Stufe": 4,
+            "Art": "Einnahmegift, pflanzlich",
+            "Widerstand": "Zähigkeit",
+            "Beginn": "1 Minute",
+            "Dauer": "5 Minuten (Brechen), bis zum Ende der nächsten Regenerationsphase",
+            "Kosten": "100 Silbertaler"
+          }
+        }
+      }
     },
     {
       "Name": "Höllenkraut",
-      "Seite": 240,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 240
+      },
       "Gebiete": [
         "südlich von Mengbilla",
         "Waldinseln"
@@ -381,22 +876,58 @@ export default
         "Wald": 16,
         "Waldrand": 24
       },
-      "Ernte": {"1W20/2 halbe Stein": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W20/2 halbe Stein": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Horusche",
-      "Seite": 240,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 240
+      },
       "Gebiete": [
         "Südliches Maraskan und umliegende Inseln"
       ],
       "Schwierigkeit": {
         "Wald": 15
       },
-      "Ernte": {"1W6 x 7W3 Kerne": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 x 7W3 Kerne": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Ilmenblatt",
-      "Seite": 241,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 241
+      },
       "Gebiete": [
         "Westküste südlich Drôl",
         "Altoum",
@@ -407,22 +938,33 @@ export default
         "Grasland, Wiesen": 6,
         "Wald": 6
       },
-      "Ernte": {"1W20 Blätter und Blüten": [3, 10]}
+      "Ernte": {
+        "1W20 Blätter und Blüten": [
+          3,
+          10
+        ]
+      }
     },
     {
       "Name": "Iribaarslilie",
-      "Seite": 241,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 241
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
       "Schwierigkeit": {
         "Sumpf und Moor": 28
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Jagdgras",
-      "Seite": 242,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 242
+      },
       "Gebiete": [
         "Maraskankette",
         "aranisches Hochland",
@@ -434,11 +976,17 @@ export default
         "Steppe": 31,
         "Wald": 31
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Joruga",
-      "Seite": 243,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 243,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Joruga.html",
+        "Aventurischer Almanach": 172
+      },
       "Gebiete": [
         "Nostria",
         "Andergast",
@@ -450,11 +998,35 @@ export default
         "Grasland, Wiesen": 15,
         "Wald": 11
       },
-      "Ernte": {"1 Wurzel": [11, 12, 0, 1, 2, 3, 4]}
+      "Ernte": {
+        "1 Wurzel": [
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "Suchschwierigkeit": -4,
+      "Bestimmungsschwierigkeit": -3,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Die unbehandelte Joruga-Wurzel ist unverdaulich und verursacht Durchfall. Wird sie zu einem Fiebersaft weiterverarbeitet, kann sie bei Schwarzer Wut und Tollwut helfen.<br/>      Die Einnahme einer Dosis Joruga-Öl schützt für 4 Monate vor einer Infektion mit Schwarzer Wut. Gegen eine Tollwutinfektion wirkt dieses Mittel jedoch nicht. Wird die dreifache Menge binnen einem Tag nach einer Infektion eingenommen, senkt das die Infektionswahrscheinlichkeit auf 5 % (1 auf W20) bei Schwarzer Wut<br/>bzw. auf 20 % (1-4 auf W20) bei Tollwut. Bei Schlachtfeldfieber wird die Dauer der Krankheit um 2 Tage verkürzt, wenn ein alkoholischer Sud aus Joruga und Gulmond eingenommen wird.",
+      "Preis": "7 / 21 Silbertaler"
     },
     {
       "Name": "Kairan",
-      "Seite": 243,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 243
+      },
       "Gebiete": [
         "Neunaugensee",
         "Einsiedlersee",
@@ -464,11 +1036,29 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 14
       },
-      "Ernte": {"1 Halm": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Halm": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Kajubo",
-      "Seite": 244,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 244
+      },
       "Gebiete": [
         "Altoum",
         "Souram",
@@ -478,11 +1068,25 @@ export default
         "Küste, Strand": 12,
         "Waldrand": 12
       },
-      "Ernte": {"2W6 Knospen": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "2W6 Knospen": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Khômknolle",
-      "Seite": 244,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 244
+      },
       "Gebiete": [
         "östliche Khôm",
         "Gorien",
@@ -492,11 +1096,29 @@ export default
         "Wüste und Wüstenrand": "21/28",
         "Steppe": "13/20"
       },
-      "Ernte": {"1W6 Maß Wasser": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Maß Wasser": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Klippenzahn",
-      "Seite": 245,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 245
+      },
       "Gebiete": [
         "Orkland",
         "Gjalskerland",
@@ -506,22 +1128,51 @@ export default
         "Gebirge": 12,
         "Hochland": 12
       },
-      "Ernte": {"2W6 Stängel": [9, 10, 11, 12, 0, 1]}
+      "Ernte": {
+        "2W6 Stängel": [
+          9,
+          10,
+          11,
+          12,
+          0,
+          1
+        ]
+      }
     },
     {
       "Name": "Kukuka",
-      "Seite": 245,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 245
+      },
       "Gebiete": [
         "westliches Regengebirge"
       ],
       "Schwierigkeit": {
         "Regenwald": 18
       },
-      "Ernte": {"1W3 x 20 Blätter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W3 x 20 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Lotos, allgemein",
-      "Seite": 245,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 245
+      },
       "Gebiete": [
         "südlich von Havena-Perricum",
         "Warunkei"
@@ -530,22 +1181,47 @@ export default
         "Fluss- und Seeufer, Teiche": 13,
         "Sumpf und Moor": 21
       },
-      "Ernte": {"je nach Lotos": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
+      "Ernte": {
+        "je nach Lotos": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
     },
     {
       "Name": "Lotos, Färber-",
-      "Seite": 246,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 246
+      },
       "Gebiete": [
         "südlich von Havena-Perricum"
       ],
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 13
       },
-      "Ernte": {"2W6+1 Blüten": [10, 11, 12, 0]}
+      "Ernte": {
+        "2W6+1 Blüten": [
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Lotos, Grauer",
-      "Seite": 246,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 246
+      },
       "Gebiete": [
         "Warunkei"
       ],
@@ -553,33 +1229,67 @@ export default
         "Fluss- und Seeufer, Teiche": 16,
         "Sumpf und Moor": 24
       },
-      "Ernte": {"1W6+1 Blüten": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
+      "Ernte": {
+        "1W6+1 Blüten": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
     },
     {
       "Name": "Lotos, Purpurner",
-      "Seite": 246,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 246
+      },
       "Gebiete": [
         "südlich von Havena-Perricum"
       ],
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 15
       },
-      "Ernte": {"1W6+1 Blüten": [10, 11, 12, 0]}
+      "Ernte": {
+        "1W6+1 Blüten": [
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Lotos, Schwarzer",
-      "Seite": 246,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 246
+      },
       "Gebiete": [
         "südlich von Havena-Perricum"
       ],
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 22
       },
-      "Ernte": {"1W6 Blüten": [10, 11, 12, 0]}
+      "Ernte": {
+        "1W6 Blüten": [
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Lotos, Weißer",
-      "Seite": 247,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 247
+      },
       "Gebiete": [
         "südlich von Havena-Perricum"
       ],
@@ -587,22 +1297,42 @@ export default
         "Fluss- und Seeufer, Teiche": 18,
         "Sumpf und Moor": 26
       },
-      "Ernte": {"1W6+1 Blüten": [10, 11, 12, 0]}
+      "Ernte": {
+        "1W6+1 Blüten": [
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Lotos, Weißgelber",
-      "Seite": 247,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 247
+      },
       "Gebiete": [
         "südlich von Havena-Perricum"
       ],
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 14
       },
-      "Ernte": {"1W3 Blüten": [10, 11, 12, 0]}
+      "Ernte": {
+        "1W3 Blüten": [
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Lulanie",
-      "Seite": 247,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 247,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Lulanie.html",
+        "Regelwerk": 346
+      },
       "Gebiete": [
         "Mittelaventurien zwischen Trallop und Punin"
       ],
@@ -610,11 +1340,32 @@ export default
         "Wald": 13,
         "Waldrand": 19
       },
-      "Ernte": {"1 Blüte": [11, 12, 0, 1]}
+      "Ernte": {
+        "1 Blüte": [
+          11,
+          12,
+          0,
+          1
+        ]
+      },
+      "Suchschwierigkeit": 0,
+      "Bestimmungsschwierigkeit": 1,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Wirkung": "Gegenmittel gegen Lutanas und Rascher Wahn",
+      "Preis": "5 / 10 Silbertaler"
     },
     {
       "Name": "Madablüte",
-      "Seite": 248,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 248
+      },
       "Gebiete": [
         "Nordaventurien"
       ],
@@ -623,20 +1374,44 @@ export default
         "Steppe": 31
       },
       "Sonstiges": "Bei Blüte, bei Vollmond -10",
-      "Ernte": {"1 Blüte": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Blüte": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Malomis",
-      "Seite": 248,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 248
+      },
       "Gebiete": [
         "keine natürlichen Vorkommen"
       ],
       "Schwierigkeit": {},
-      "Ernte": {"1 Blüte": [1]}
+      "Ernte": {
+        "1 Blüte": [
+          1
+        ]
+      }
     },
     {
       "Name": "Menchal-Kaktus",
-      "Seite": 249,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 249
+      },
       "Gebiete": [
         "Khômwüste und Randgebiete",
         "Gorien"
@@ -645,11 +1420,29 @@ export default
         "Wüste und Wüstenrand": 18,
         "Hochland": 18
       },
-      "Ernte": {"1W6 halbe Maß": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 halbe Maß": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Merach-Strauch",
-      "Seite": 250,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 250
+      },
       "Gebiete": [
         "Mhanadistan",
         "Thalusien",
@@ -660,11 +1453,20 @@ export default
         "Wald": 10,
         "Regenwald": 18
       },
-      "Ernte": {"2W20 Früchte": [2, 3]}
+      "Ernte": {
+        "2W20 Früchte": [
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Messergras",
-      "Seite": 250,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 250,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Messergras.html",
+        "Die Streitenden Königreiche": 103
+      },
       "Gebiete": [
         "zwischen Riva und Mengbilla"
       ],
@@ -673,11 +1475,29 @@ export default
         "Hochland": 22,
         "Steppe": 14
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      },
+      "Suchschwierigkeit": -2,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Wirkung": "Die Berührung von Messergras an der scharfkantigen Seite verursacht zwischen 1W6–1 und 1W6+1 TP. In der Regel möchte der Held aber durch eine ganze Wiese oder Steppe mit Messergras und versucht den gefährlichen Pflanzen auszuweichen. Pro Meile, die ein Held durch Messergras geht, erleidet er 1W6+3 TP. Er kann eine Probe Körperbeherrschung (Akrobatik, Balance oder Springen) ablegen. Jede QS verringert den Schaden um 1 TP. Messergras eignet sich nicht als Waffe.",
+      "Preis": "–"
     },
     {
       "Name": "Mibelrohr",
-      "Seite": 251,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 251,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Mibelrohr.html",
+        "Die Streitenden Königreiche": 103
+      },
       "Gebiete": [
         "Westküste zwischen Salza und Mengbilla"
       ],
@@ -686,11 +1506,34 @@ export default
         "Flussauen": 12,
         "Sumpf und Moor": 16
       },
-      "Ernte": {"2W6 Kolben": [10, 11, 12, 0, 1, 2]}
+      "Ernte": {
+        "2W6 Kolben": [
+          10,
+          11,
+          12,
+          0,
+          1,
+          2
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        3
+      ],
+      "Wirkung": "Kolben und Stängel müssen zermahlen und aufgekocht werden. Beim Trinken des Tees wird eine Anwendung verbraucht. Nach 5 Minuten entfaltet Mibelrohr seine Wirkung. Der Tee bringt für die Wirkungsdauer einen Bonus von +1 auf KL oder FF bei der ersten Teilprobe einer Fertigkeitsprobe, die auf eine dieser beiden Eigenschaften abgelegt wird. Die Wirkung hält 2W6 Minuten an.",
+      "Preis": "12 / 24 Silbertaler"
     },
     {
       "Name": "Mirbelstein",
-      "Seite": 251,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 251
+      },
       "Gebiete": [
         "Garetien",
         "Darpatien",
@@ -702,11 +1545,25 @@ export default
         "Grasland, Wiesen": 16,
         "Wald": 12
       },
-      "Ernte": {"1 Wurzelknolle": [9, 10, 11, 12, 0, 1, 2, 3, 4]}
+      "Ernte": {
+        "1 Wurzelknolle": [
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
     },
     {
       "Name": "Mirhamer Seidenliane",
-      "Seite": 251,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 251
+      },
       "Gebiete": [
         "südlich von Mengbilla",
         "zwischen Mirham und Brabak"
@@ -716,22 +1573,37 @@ export default
         "Fluss- und Seeufer, Teiche": 20,
         "Regenwald": 12
       },
-      "Ernte": {"1 Ranke mit 2-3 Knoten": [7, 8, 9, 10]}
+      "Ernte": {
+        "1 Ranke mit 2-3 Knoten": [
+          7,
+          8,
+          9,
+          10
+        ]
+      }
     },
     {
       "Name": "Mohn, Bleich-",
-      "Seite": 252,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 252
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
       "Schwierigkeit": {
         "Gebirge": 13
       },
-      "Ernte": {"1W6 Samenkapseln": [1]}
+      "Ernte": {
+        "1W6 Samenkapseln": [
+          1
+        ]
+      }
     },
     {
       "Name": "Mohn, Bunter",
-      "Seite": 252,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 252
+      },
       "Gebiete": [
         "Nord- und Mittelaventurien",
         "Liebliches Feld",
@@ -742,22 +1614,49 @@ export default
         "Fluss- und Seeufer, Teiche": -1,
         "Waldrand": 3
       },
-      "Ernte": {"1 Samenkapsel": [3]}
+      "Ernte": {
+        "1 Samenkapsel": [
+          3
+        ]
+      }
     },
     {
       "Name": "Mohn, Grauer",
-      "Seite": 253,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 253
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
       "Schwierigkeit": {
         "Gebirge": 17
       },
-      "Ernte": {"1 Kapsel": [1], "Blüte": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Kapsel": [
+          1
+        ],
+        "Blüte": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Mohn, Purpurner",
-      "Seite": 253,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 253
+      },
       "Gebiete": [
         "Liebliches Feld",
         "Aranien",
@@ -769,22 +1668,39 @@ export default
         "Fluss- und Seeufer, Teiche": 19,
         "Wald": 19
       },
-      "Ernte": {"1 Samenkapsel": [11]}
+      "Ernte": {
+        "1 Samenkapsel": [
+          11
+        ]
+      }
     },
     {
       "Name": "Mohn, Schwarzer",
-      "Seite": 253,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 253
+      },
       "Gebiete": [
         "Pailos (Zyklopeninseln)"
       ],
       "Schwierigkeit": {
         "Palakar": 6
       },
-      "Ernte": {"2 Blätter": [2, 3, 4], "1 Kapsel": [4]}
+      "Ernte": {
+        "2 Blätter": [
+          2,
+          3,
+          4
+        ],
+        "1 Kapsel": [
+          4
+        ]
+      }
     },
     {
       "Name": "Mohn, Tiger-",
-      "Seite": 254,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 254
+      },
       "Gebiete": [
         "Nord- und Mittelaventurien",
         "Liebliches Feld",
@@ -795,22 +1711,32 @@ export default
         "Flussauen": 18,
         "Waldrand": 18
       },
-      "Ernte": {"1 Samenkapsel": [3]}
+      "Ernte": {
+        "1 Samenkapsel": [
+          3
+        ]
+      }
     },
     {
       "Name": "Morgendornstrauch",
-      "Seite": 254,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 254
+      },
       "Gebiete": [
         "Nordostaventurien von der Letta bis zur Tobimora"
       ],
       "Schwierigkeit": {
         "Sumpf und Moor": 21
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Naftanstaude",
-      "Seite": 255,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 255
+      },
       "Gebiete": [
         "südlich von Riva"
       ],
@@ -819,11 +1745,31 @@ export default
         "Grasland, Wiesen": 9,
         "Waldrand": 17
       },
-      "Ernte": {"1 Staude": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Staude": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Neckerkraut",
-      "Seite": 255,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 255,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Neckerkraut.html",
+        "Aventurischer Almanach": 172
+      },
       "Gebiete": [
         "Westküste Aventuriens"
       ],
@@ -832,11 +1778,41 @@ export default
         "Küste, Strand": 8,
         "Sumpf und Moor": 20
       },
-      "Ernte": {"1W20+5 Blätter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W20+5 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -1,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "Wirkung": "Die Einnahme einer Anwendung Neckerkraut unterbricht die Efferd- oder Kerkersieche für einen Tag. Die Einnahme von frischem Neckerkraut verhindert zudem für eine Woche eine Erkrankung an beiden Krankheiten. Eine Erhöhung der Dosis hat keine Auswirkungen.",
+      "Preis": "3 / 3,5 Silbertaler"
     },
     {
       "Name": "Nothilf",
-      "Seite": 256,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 256
+      },
       "Gebiete": [
         "Wälder um die Salamandersteine"
       ],
@@ -844,11 +1820,20 @@ export default
         "Gebirge": 14,
         "Wald": 14
       },
-      "Ernte": {"1W20+2 Blüten": [0], "2W20+10 Blätter": [9]}
+      "Ernte": {
+        "1W20+2 Blüten": [
+          0
+        ],
+        "2W20+10 Blätter": [
+          9
+        ]
+      }
     },
     {
       "Name": "Olginwurz",
-      "Seite": 256,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 256
+      },
       "Gebiete": [
         "Raschtulswall"
       ],
@@ -857,11 +1842,29 @@ export default
         "Hochland": 18,
         "Wald": 18
       },
-      "Ernte": {"1W3 Moosballen": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W3 Moosballen": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Orazal",
-      "Seite": 257,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 257
+      },
       "Gebiete": [
         "südlich Mengbilla"
       ],
@@ -869,11 +1872,29 @@ export default
         "Regenwald": 12,
         "Wald": 20
       },
-      "Ernte": {"1W6 verholzte Stängel": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 verholzte Stängel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Orkland-Bovist",
-      "Seite": 258,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 258
+      },
       "Gebiete": [
         "Orkland",
         "Svelltland",
@@ -884,11 +1905,15 @@ export default
         "Steppe": 20,
         "Wald": 20
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Pestsporenpilz",
-      "Seite": 258,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 258
+      },
       "Gebiete": [
         "nördlich Nostria-Vallusa"
       ],
@@ -897,11 +1922,22 @@ export default
         "Sumpf und Moor": 14,
         "Wald": 22
       },
-      "Ernte": {" 7 Pilzhaut": [9, 10, 11, 2, 3, 4]}
+      "Ernte": {
+        " 7 Pilzhaut": [
+          9,
+          10,
+          11,
+          2,
+          3,
+          4
+        ]
+      }
     },
     {
       "Name": "Phosphorpilz",
-      "Seite": 258,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 258
+      },
       "Gebiete": [
         "Orkland",
         "Finsterkamm"
@@ -909,22 +1945,56 @@ export default
       "Schwierigkeit": {
         "Höhlen": "(+5 / 18)"
       },
-      "Ernte": {"1W6 Stein": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Stein": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Quasselwurz",
-      "Seite": 259,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 259
+      },
       "Gebiete": [
         "zwischen Salamandersteinen und Ongalo-Bergen"
       ],
       "Schwierigkeit": {
         "Wald": 20
       },
-      "Ernte": {"1 Wurzel": [8, 9, 10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "1 Wurzel": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Quinja",
-      "Seite": 259,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 259,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Quinja.html",
+        "Aventurischer Almanach": 173
+      },
       "Gebiete": [
         "südlich von Loch Harodrôl"
       ],
@@ -933,11 +2003,35 @@ export default
         "Wald": 10,
         "Waldrand": 14
       },
-      "Ernte": {"1W3+2 Beeren": [10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "1W3+2 Beeren": [
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "Wirkung": "Eine Quinja-Beere erhöht die Körperkraft des Anwenders für 2 Stunden um 1 Punkt. Eine Einnahme mehrerer Beeren gleichzeitig hat keine weitere Auswirkung. Ein Sud aus Quinja, Sansaro und Donf verhindert einen Ausbruch des Jahresfiebers für fünf Monate nach Einnahme.",
+      "Preis": "6 / 6,5 Silbertaler"
     },
     {
       "Name": "Rahjalieb",
-      "Seite": 260,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 260
+      },
       "Gebiete": [
         "südlich von Festum"
       ],
@@ -947,11 +2041,31 @@ export default
         "Regenwald": 7,
         "Wald": 9
       },
-      "Ernte": {"2W6 Blätter": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5, 6]}
+      "Ernte": {
+        "2W6 Blätter": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
     },
     {
       "Name": "Rattenpilz",
-      "Seite": 260,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 260,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Rattenpilz.html",
+        "Offenbarung des Himmels": 45,
+        "Aventurischer Almanach": 174
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
@@ -967,11 +2081,37 @@ export default
         "Wald": 23,
         "Waldrand": 23
       },
-      "Ernte": {"1 Pilz": [0, 1, 2, 3, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Pilz": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Wirkung": "Für Zwölfgöttergeweihte ist der Pilz besonders gefährlich: Bereits die bloße Berührung kann bei ihnen zu einer Ansteckung mit den tödlichen Zorganpocken (siehe Regelwerk Seite 344) führen. Geweihte des Namenlosen schätzen die Wirkung des Rattenpilzes besonders, erleichtert er es ihnen doch, selbst fromme Diener der Zwölfe nachhaltig zu erschüttern und sie zum Glauben an den Widersacher zu bekehren. Der Pilz verströmt eine starke Anziehungskraft auf jeden Wanderer. Der Meister würfelt mit der Giftstufe, also 3 (13/13/13) erschwert um die SK des Helden. Bei Erfolg atmet der Charakter genug Sporen ein oder verspeist den Pilz gar, sodass Zweifel von ihm Besitzt ergreifen. Berührt jemand mit zwölfgöttlicher Geweihtentradition einen Pilz oder verzehrt ihn, würfelt der Meister zuerst auf die Ansteckung mit Zorganpocken. Diese Krankheit ist im Regelwerk auf Seite 344 beschrieben. Die Ansteckungswahrscheinlichkeit beträgt 50 % (1-10 auf W20). Wird der Geweihte nicht infiziert, so überkommen auch ihn namenlose Zweifel.<br/><strong>Sonderregel<strong>: Der Pilz verströmt eine starke Anziehungskraft auf jeden Wanderer. Der Meister würfelt mit der Giftstufe, also 3 (13/13/13) erschwert um die SK des Helden. Bei Erfolg atmet der Charakter genug Sporen ein oder verspeist den Pilz gar, sodass Zweifel von ihm Besitz ergreifen. Berührt jemand mit zwölfgöttlicher Geweihtentradition einen Pilz oder verzehrt ihn, würfelt der Meister zuerst auf die Ansteckung mit Zorganpocken. Diese Krankheit ist im Regelwerk auf Seite 344 beschrieben. Die Ansteckungswahrscheinlichkeit beträgt 50 % (1-10 auf W20). Wird der Geweihte nicht infiziert, so überkommen auch ihn namenlose Zweifel.",
+      "Suchschwierigkeit": -4,
+      "Bestimmungsschwierigkeit": -3,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Preis": "-"
     },
     {
       "Name": "Rauschgurke",
-      "Seite": 261,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 261
+      },
       "Gebiete": [
         "Maraskan",
         "Khunchom"
@@ -980,11 +2120,27 @@ export default
         "Wald": 7,
         "Waldrand": 11
       },
-      "Ernte": {"3W6 Gurken": [7, 8, 9, 10, 11, 12, 0, 1, 2, 3, 4]}
+      "Ernte": {
+        "3W6 Gurken": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
     },
     {
       "Name": "Rote Pfeilblüte",
-      "Seite": 261,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 261
+      },
       "Gebiete": [
         "südlich von Neetha-Thalusa"
       ],
@@ -993,11 +2149,19 @@ export default
         "Regenwald": 11,
         "Wald": 23
       },
-      "Ernte": {"1W6 Blüten": [9, 10, 11]}
+      "Ernte": {
+        "1W6 Blüten": [
+          9,
+          10,
+          11
+        ]
+      }
     },
     {
       "Name": "Roter Drachenschlund",
-      "Seite": 262,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 262
+      },
       "Gebiete": [
         "nördlich von Drôl-Thalusa"
       ],
@@ -1006,11 +2170,31 @@ export default
         "Waldrand": 26
       },
       "Sonstiges": "Bei Blüte -7",
-      "Ernte": {"1W6 Blätter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Sansaro",
-      "Seite": 262,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 262,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Sansaro.html",
+        "Aventurischer Almanach": 172
+      },
       "Gebiete": [
         "Perlenmeer zwischen Selem und Charypso"
       ],
@@ -1018,11 +2202,41 @@ export default
         "Küste, Strand": 14,
         "Meer": 20
       },
-      "Ernte": {"1 Pflanze": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Pflanze": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -5,
+      "Bestimmungsschwierigkeit": -4,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "Wirkung": "Sansaro lindert die Folgen der Efferd- und Kerkersieche. Es kommen keine weiteren Stufen Verwirrung durch die Krankheit hinzu. Bei konstanter Einnahme über zwei Wochen können beide Krankheiten sogar ganz besiegt werden. Bei Fieberkrankheiten eingenommen, kann Sansaro die verursachten SP pro Tag um 1 reduzieren. Als Sud weiterverarbeitet, verhindert es zudem einen Tag lang Ansteckungen mit allen Krankheiten – es sei denn, sie haben eine magische oder eine andere übernatürliche Ursache. Als Paste hilft die Pflanze zwei Tage lang gegen Parasiten. Nach einer Woche setzt bei der Paste aber ein Faulgeruch ein, sodass der Anwender eine Erschwernis von 1 auf alle CH-Proben erhält, sofern Geruch eine Rolle spielt (insbesondere bei Teilproben von Fertigkeiten). Ein Sud aus Quinja, Sansaro und Donf kann für fünf Monate einen Ausbruch des Jahresfiebers verhindern.",
+      "Preis": "9 / 18 Silbertaler"
     },
     {
       "Name": "Satuariensbusch",
-      "Seite": 263,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 263
+      },
       "Gebiete": [
         "südlich der Gelben Sichel"
       ],
@@ -1030,11 +2244,36 @@ export default
         "Wald": 2,
         "Waldrand": 2
       },
-      "Ernte": {"4W20 Blätter": [10, 11, 12, 0], "1W20 Blüten": [10, 11], "1W20 Früchte": [2, 3], "1W3 Flux Saft": [8, 9, 10, 11, 12, 0] }
+      "Ernte": {
+        "4W20 Blätter": [
+          10,
+          11,
+          12,
+          0
+        ],
+        "1W20 Blüten": [
+          10,
+          11
+        ],
+        "1W20 Früchte": [
+          2,
+          3
+        ],
+        "1W3 Flux Saft": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Schlangenzünglein",
-      "Seite": 263,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 263
+      },
       "Gebiete": [
         "Maraskan",
         "Golf von Perricum",
@@ -1047,11 +2286,29 @@ export default
         "Sumpf und Moor": 11,
         "Regenwald": 19
       },
-      "Ernte": {"1 Pflanze": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Pflanze": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Schleichender Tod",
-      "Seite": 264,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 264
+      },
       "Gebiete": [
         "südlich von Loch Harodrôl"
       ],
@@ -1059,11 +2316,18 @@ export default
         "Fluss- und Seeufer, Teiche": 22,
         "Waldrand": 22
       },
-      "Ernte": {"1W6 Blüten": [10, 11]}
+      "Ernte": {
+        "1W6 Blüten": [
+          10,
+          11
+        ]
+      }
     },
     {
       "Name": "Schleimiger Sumpfknöterich",
-      "Seite": 264,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 264
+      },
       "Gebiete": [
         "Bornland",
         "Tobrien"
@@ -1072,22 +2336,35 @@ export default
         "Wald": 11,
         "Waldrand": 19
       },
-      "Ernte": {"2W6 Pilze": [0, 1, 2, 3]}
+      "Ernte": {
+        "2W6 Pilze": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Schlinggras",
-      "Seite": 265,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 265
+      },
       "Gebiete": [
         "Nordaventurien"
       ],
       "Schwierigkeit": {
         "Sumpf und Moor": 20
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Schwarmschwamm",
-      "Seite": 265,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 265
+      },
       "Gebiete": [
         "Schwarz-Tobrien"
       ],
@@ -1095,11 +2372,32 @@ export default
         "Fluss- und Seeufer, Teiche": 19,
         "Flussauen": 19
       },
-      "Ernte": {"1 Schwamm": [2],  "1W2 Samenkörper": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1 Schwamm": [
+          2
+        ],
+        "1W2 Samenkörper": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Schwarzer Wein",
-      "Seite": 266,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 266
+      },
       "Gebiete": [
         "Oron"
       ],
@@ -1108,11 +2406,29 @@ export default
         "Steppe": 6,
         "Wald": 4
       },
-      "Ernte": {"7W6 Beeren": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "7W6 Beeren": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Shurinstrauch",
-      "Seite": 267,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 267
+      },
       "Gebiete": [
         "zwischen Riva und Al‘Anfa"
       ],
@@ -1121,11 +2437,21 @@ export default
         "Grasland, Wiesen": 10,
         "Wald": 18
       },
-      "Ernte": {"1W20 Knollen": [10, 11, 12, 0, 1]}
+      "Ernte": {
+        "1W20 Knollen": [
+          10,
+          11,
+          12,
+          0,
+          1
+        ]
+      }
     },
     {
       "Name": "Talaschin",
-      "Seite": 268,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 268
+      },
       "Gebiete": [
         "Wüsten",
         "Eis",
@@ -1136,11 +2462,29 @@ export default
         "Wüste und Wüstenrand": 21,
         "Gebirge": 9
       },
-      "Ernte": {"1W6 Flechten": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Flechten": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Tarnblatt",
-      "Seite": 268,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 268
+      },
       "Gebiete": [
         "Maraskan"
       ],
@@ -1148,11 +2492,17 @@ export default
         "Regenwald": 16,
         "Wald": 16
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Tarnele",
-      "Seite": 268,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 268,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Tarnele.html",
+        "Die Streitenden Königreiche": 103
+      },
       "Gebiete": [
         "zwischen Gerasim und Mengbilla"
       ],
@@ -1163,11 +2513,35 @@ export default
         "Sumpf und Moor": 8,
         "Wald": 8
       },
-      "Ernte": {"1 Pflanze": [10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "1 Pflanze": [
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "Suchschwierigkeit": 2,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Auf eine Verwundung aufgetragen, bringt eine Tarnele +1 LeP bei der nächsten Regenerationsphase. Dabei spielt es keine Rolle, ob der Brei der Tarnele frisch auf die Wunde aufgetragen wurde oder eine haltbarere Tarnelensalbe zum Einsatz kommt. Weitere Anwendungen erzielen jedoch keinen zusätzlichen Effekt. Tarnele kann außerdem für 1 Stunde die Auswirkungen von 1 Stufe Schmerz unterdrücken. Dies funktioniert nur, solange der Held unter maximal 1 Stufe Schmerz leidet. Bei mehr als 1 Stufe setzt die schmerzlindernde Wirkung nicht ein oder endet umgehend.",
+      "Preis": "3 / 6 Silbertaler"
     },
     {
       "Name": "Thonnys",
-      "Seite": 269,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 269
+      },
       "Gebiete": [
         "nördlich von Thorwal-Festum"
       ],
@@ -1175,11 +2549,26 @@ export default
         "Steppe": "+21 / 28",
         "Wald": "+21 / 28"
       },
-      "Ernte": {"1W6+4 Blätter": [9, 10, 11, 12, 0, 1, 2, 3]}
+      "Ernte": {
+        "1W6+4 Blätter": [
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Traschbart",
-      "Seite": 269,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 269,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Traschbart.html",
+        "Aventurischer Almanach": 173
+      },
       "Gebiete": [
         "Steineichenwald",
         "Finsterkamm",
@@ -1190,11 +2579,41 @@ export default
         "Sumpf und Moor": 10,
         "Wald": 8
       },
-      "Ernte": {"1W6 Flechten": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Flechten": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Bei Fieberkrankheiten eingenommen, frisch oder getrocknet als Pulver, kann Traschbart die SP pro Tag um 1 reduzieren. Traschbart-Salbe verhindert, dass als Folge der Gilbe der Kranke auch noch Jahresfieber bekommen kann.",
+      "Preis": "6 / 18 Silbertaler"
     },
     {
       "Name": "Trichterwurzel",
-      "Seite": 270,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 270
+      },
       "Gebiete": [
         "Maraskan"
       ],
@@ -1202,11 +2621,15 @@ export default
         "Wald": 15,
         "Waldrand": 27
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Tuur-Amash-Kelch",
-      "Seite": 270,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 270
+      },
       "Gebiete": [
         "Schwarz-Tobrien"
       ],
@@ -1214,11 +2637,29 @@ export default
         "Wald": 9,
         "Waldrand": 17
       },
-      "Ernte": {"1W6+3 Kelche": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6+3 Kelche": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Ulmenwürger",
-      "Seite": 271,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 271
+      },
       "Gebiete": [
         "nördlich von Havena-Perricum"
       ],
@@ -1226,11 +2667,20 @@ export default
         "Wald": 6,
         "Waldrand": 10
       },
-      "Ernte": {"1W20 Blüten": [2, 3]}
+      "Ernte": {
+        "1W20 Blüten": [
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Vierblättrige Einbeere",
-      "Seite": 271,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 271,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Einbeere.html",
+        "Aventurischer Almanach": 172
+      },
       "Gebiete": [
         "nördlich des Yaquirs"
       ],
@@ -1247,11 +2697,39 @@ export default
         "Wald": 7,
         "Waldrand": 7
       },
-      "Ernte": {"1W6 Beeren": [8, 9, 10, 11, 12, 0, 1, 2, 3, 4, 5]}
+      "Ernte": {
+        "1W6 Beeren": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Pro Anwendung 2 LeP zusätzlich bei der nächsten Regeneration, maximal jedoch 4 pro Regenerationsphase zusätzlich. Wer 2 oder mehr Anwendungen innerhalb eines Tages einnimmt, wird nach Einbeeren süchtig und verliert 1W6 LeP pro Woche, wenn er nicht mindestens 1 Anwendung pro Woche einnimmt.",
+      "Preis": "6 / 7 Silbertaler"
     },
     {
       "Name": "Vragieswurzel",
-      "Seite": 272,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 272
+      },
       "Gebiete": [
         "südlich von Havena"
       ],
@@ -1261,22 +2739,34 @@ export default
         "Regenwald": 10,
         "Wald": 14
       },
-      "Ernte": {"1 Wurzel": [2, 3, 4]}
+      "Ernte": {
+        "1 Wurzel": [
+          2,
+          3,
+          4
+        ]
+      }
     },
     {
       "Name": "Waldwebe",
-      "Seite": 272,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 272
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
       "Schwierigkeit": {
         "Wald": 13
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Wasserrausch",
-      "Seite": 273,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 273
+      },
       "Gebiete": [
         "Bornland",
         "nördliches Tobrien"
@@ -1284,11 +2774,26 @@ export default
       "Schwierigkeit": {
         "Fluss- und Seeufer, Teiche": 9
       },
-      "Ernte": {"2W20 Blüten": [11, 12, 0, 1, 2], "1 Frucht": [1, 2, 3]}
+      "Ernte": {
+        "2W20 Blüten": [
+          11,
+          12,
+          0,
+          1,
+          2
+        ],
+        "1 Frucht": [
+          1,
+          2,
+          3
+        ]
+      }
     },
     {
       "Name": "Winselgras",
-      "Seite": 273,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 273
+      },
       "Gebiete": [
         "Ostaventurien",
         "Aranien",
@@ -1298,11 +2803,17 @@ export default
         "Steppe": "2/16",
         "Grasland, Wiesen": "4/1"
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Wirselkraut",
-      "Seite": 273,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 273,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Wirselkraut.html",
+        "Regelwerk": 346
+      },
       "Gebiete": [
         "ganz Aventurien"
       ],
@@ -1310,11 +2821,37 @@ export default
         "Steppe": 7,
         "Grasland, Wiesen": 9
       },
-      "Ernte": {"1W6+4 Blätter": [0, 1, 2, 3, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6+4 Blätter": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -1,
+      "Bestimmungsschwierigkeit": -2,
+      "Anwendungen": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "Wirkung": "pro Anwendung 1 LeP zusätzlich bei der nächsten Regeneration, maximal jedoch 3 pro Regenerationsphase zusätzlich.",
+      "Preis": "2 / 2,2 Silbertaler"
     },
     {
       "Name": "Würgedattel",
-      "Seite": 274,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 274
+      },
       "Gebiete": [
         "Waldinseln von Ost-Altoum bis Ibonka"
       ],
@@ -1322,11 +2859,17 @@ export default
         "Hochland": 21,
         "Wald": 21
       },
-      "Ernte": {"-": []}
+      "Ernte": {
+        "-": []
+      }
     },
     {
       "Name": "Yaganstrauch",
-      "Seite": 274,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 274,
+        "Aventurischer Almanach": 173,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Yagannuss.html"
+      },
       "Gebiete": [
         "Maraskan",
         "Aranien"
@@ -1335,11 +2878,29 @@ export default
         "Gebirge": 14,
         "Wald": 10
       },
-      "Ernte": {"1W6 Nüsse": [4]}
+      "Ernte": {
+        "1W6 Nüsse": [
+          4
+        ]
+      },
+      "Suchschwierigkeit": -2,
+      "Bestimmungsschwierigkeit": -1,
+      "Anwendungen": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "Wirkung": "Das Yagan-Öl steigert die Ausdauer des Anwenders, sobald er die Flüssigkeit trinkt. Die Konstitution ist bei allen Fertigkeitsproben einen Tag lang um 1 erhöht. Am nächsten Tag erhält der Anwender aber dafür eine Stufe Betäubung. Wer eine Yagannuss isst, muss eine Probe auf Selbstbeherrschung (Störungen ignorieren) erschwert um 2 ablegen. Bei Misslingen leidet er fünf Minuten an Atemlosigkeit (1 Stufe Betäubung), sechs Stunden an Vernichtungsängsten (3 Stufen Furcht) und sieben Stunden an Tränenfluss. Die Auswirkungen sind so heftig, dass er erst nach einem Vierteljahr wieder versuchen kann, eine Yagannuss zu essen. Der Verzehr sättigt aber dafür für drei Tage.",
+      "Preis": "6 / 6,5 Silbertaler"
     },
     {
       "Name": "Zithabar",
-      "Seite": 275,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 275
+      },
       "Gebiete": [
         "Aranien",
         "Mhanadistan",
@@ -1354,11 +2915,21 @@ export default
         "Wald": 21,
         "Waldrand": 13
       },
-      "Ernte": {"3W20 Blätter": [9, 10, 11, 12, 0]}
+      "Ernte": {
+        "3W20 Blätter": [
+          9,
+          10,
+          11,
+          12,
+          0
+        ]
+      }
     },
     {
       "Name": "Zunderschwamm",
-      "Seite": 275,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 275
+      },
       "Gebiete": [
         "südlich des Blauen Sees"
       ],
@@ -1366,11 +2937,29 @@ export default
         "Regenwald": 8,
         "Wald": 6
       },
-      "Ernte": {"1W6 Pilze": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+      "Ernte": {
+        "1W6 Pilze": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
     },
     {
       "Name": "Zwölfblatt",
-      "Seite": 276,
+      "Publikationen": {
+        "Zoo Botanica Aventurica": 276
+      },
       "Gebiete": [
         "südlich von Riva"
       ],
@@ -1381,7 +2970,189 @@ export default
         "Sumpf und Moor": 21,
         "Wald": 9
       },
-      "Ernte": {"12 Stängel": [5, 6, 7, 8, 9, 10, 11, 12, 0]}
+      "Ernte": {
+        "12 Stängel": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          0
+        ]
+      }
+    },
+    {
+      "Name": "Margolasch",
+      "Publikationen": {
+        "Die Siebenwindküste": 95,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Margolasch.html"
+      },
+      "Gebiete": [
+        "Albernia",
+        "Windhag"
+      ],
+      "Schwierigkeit": {
+        "Grasland, Wiesen": 11,
+        "Waldrand": 11,
+        "Wald": 9
+      },
+      "Ernte": {
+        "1W3 Pilze": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -1,
+      "Bestimmungsschwierigkeit": -1,
+      "Anwendungen": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "Wirkung": "Wird der Margolaschpilz angebraten und gegessen, so kann bei der nächsten Regenerationsphase zur Grundregenation +1 LeP addiert werden. Bei mehreren Anwendungen ist die Wirkung jedoch nicht kumulativ. Wird der Pilz roh gegessen, so wirkt er abführend.",
+      "Preis": "1 / 1,2 Silbertaler",
+      "Produkte": {
+        "Margolaschabführmittel": {
+          "Gift": {
+            "Stufe": 6,
+            "Art": "Einnahmegift, pflanzlich",
+            "Widerstand": "Zähigkeit",
+            "Wirkung": "wirkt abführend / -",
+            "Beginn": "1 Stunde",
+            "Dauer": "30 Minuten",
+            "Kosten": "siehe Margolasch"
+          }
+        }
+      }
+    },
+    {
+      "Name": "Schattennebler",
+      "Publikationen": {
+        "Die Siebenwindküste": 96,
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Schattennebler.html"
+      },
+      "Gebiete": [
+        "Phecanowald",
+        "Windhaggebirge"
+      ],
+      "Schwierigkeit": {
+        "Gebirge": 9,
+        "Hochland": 11,
+        "Wald": 9
+      },
+      "Ernte": {
+        "1 Pilzgruppe": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "Suchschwierigkeit": -2,
+      "Bestimmungsschwierigkeit": 0,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Wirkung": "Wer sich den Pilzen bis auf einen Radius von 10 Schritt nähert, muss sich mit einer Probe auf Verbergen (Schleichen) oder Körperbeherrschung erschwert um 3 an ihnen vorbei bewegen, sonst lösen sie ihre Sporen aus. Diese bewirken einen Sichtmodifikator von 2 durch Dunkelheit in einem 20 Schritt Radius, und alle Betroffenen müssen sich dann mit dem Gift der Schattenneblersporen auseinandersetzen. Die Pilze können ihre Sporen nur einmal täglich in die Luft schleudern.",
+      "Preis": "2 / 2,2 Silbertaler",
+      "Produkte": {
+        "Schattenneblergift": {
+          "Gift": {
+            "Stufe": 3,
+            "Art": "Atemgift, pflanzlich",
+            "Widerstand": "Zähigkeit",
+            "Wirkung": "1 Stufe Verwirrung / –",
+            "Beginn": "sofort",
+            "Dauer": "5 Minuten",
+            "Kosten": "– (kann nicht als Gift gewonnen werden; Wirkung verflüchtig sich nach 5 Minuten)"
+          }
+        }
+      }
+    },
+    {
+      "Name": "Weißdorn",
+      "Publikationen": {
+        "Regelwiki": "http://www.ulisses-regelwiki.de/index.php/Her_Weissdorn.html",
+        "Die Siebenwindküste": 96
+      },
+      "Gebiete": [
+        "Albernia",
+        "Bornland",
+        "Nord- und Mittelaventurien"
+      ],
+      "Schwierigkeit": {
+        "Grasland, Wiesen": 12
+      },
+      "Ernte": {
+        "Holz": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "weiße Rosenblüten": [
+          0,
+          1,
+          11,
+          12
+        ],
+        "rote Mehlbeeren": [
+          2,
+          3
+        ]
+      },
+      "Suchschwierigkeit": -3,
+      "Bestimmungsschwierigkeit": 1,
+      "Anwendungen": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Wirkung": "Abgeschnittenes Weißdornholz vertreibt durch seinen Geruch vampirische Wesen und Feen. Sie nähern sich dem leicht übelriechenden Holz maximal bis auf 10 Schritt. Das Holz wirkt wie ein Schutzkreis gegen Vampire bzw. Feenwesen (siehe Regelwerk Seite 266). Wird das Holz an Vampire oder Feen herangetragen, weichen diese ihm aus und versuchen, mindestens 10 Schritt Distanz zu bewahren. Ist ihnen dies nicht möglich, erleiden sie 3 Stufen des Zustands Verwirrung, bis sie sich aus dem Wirkungsradius entfernen. Das Holz behält seinen Geruch 1 Stunde lang und hat ansonsten keine besondere Schadenswirkung gegen Vampire oder Feen.",
+      "Preis": "4 / 12 Silbertaler"
     }
   ]
 }
