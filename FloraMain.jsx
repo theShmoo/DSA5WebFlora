@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Jumbotron, Grid, Row, Col, PageHeader, Image} from 'react-bootstrap';
-import FilterWidget from './FilterWidget.jsx';
-import DSAMonthPicker from './DSAMonthPicker.jsx';
-import DSAFloraGrid from './DSAFloraGrid.jsx';
-import {DSARegionen} from './DSAUtils.jsx';
-import './App.css';
-import data from "./data.jsx";
+
+import FilterWidget from './FilterWidget';
+import DSAMonthPicker from './DSAMonthPicker';
+import DSAFloraGrid from './DSAFloraGrid';
+import {DSARegionen} from './DSAUtils';
+import {Flora} from "../data/DSAFloraData";
 
 export default class App extends Component {
 
