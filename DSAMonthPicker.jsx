@@ -1,79 +1,81 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Col, FormGroup, ControlLabel, Button} from 'react-bootstrap';
-import DSAMonthTooltip from './DSAMonthTooltip'
-import {DSAMonths} from './DSAUtils';
-import DSAMonth from './DSAMonth'
+import { makeStyles } from '@material-ui/core/styles';
 
-export default class FilterWidget extends Component {
+import FormControl from '@material-ui/core/FormControl';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormLabel from '@material-ui/core/FormLabel';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 
-  constructor(props)
-  {
-    super(props);
+import {DSAMonths} from '../data/DSAMonths';
+import {Months} from '../utils/DSATextElements';
 
-    this.state = {
-      lang: "normal"
-    }
+const useStyles = makeStyles(theme => ({
+  root: {
+    display: 'flex',
+  },
+  formControl: {
+    margin: theme.spacing(3),
+  },
+}));
 
-    this.onToggle = this.onToggle.bind(this);
-  }
+function getMonths(months, onToggle) {
+  return DSAMonths.map((m, i) => {
+    const active = months.length === 0 || months.includes(i);
+    return <FormControlLabel key={i}
+        control={
+          <Checkbox
+            checked={active}
+            onChange={onToggle}
+            value={i} />
+          }
+          label={m.normal}
+        />;
+  });
+}
 
-   onToggle(event) {
-    let filter = {};
-    const {property, selected} = this.props;
+function getTitle(months) {
+  const monthsInTitle = months.length === 0
+    ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    : months;
+  return "Monate - " + Months(monthsInTitle);
+}
+
+function DSAMonthPicker(props) {
+
+  const classes = useStyles();
+
+  const {onChange, selected} = props;
+
+  const onToggle = (event) => {
+    let months = selected;
     const v = Number(event.target.value);
 
-    filter[property] = selected;
     const index = selected.indexOf(v);
 
     if(index === -1) {
-      filter[property].push(v);
+      months.push(v);
     }
     else {
-      filter[property].splice(index, 1);
+      months.splice(index, 1);
     }
-    this.props.onUserInput(filter);
+    onChange(months);
   }
-
-  renderMonths() {
-    const {selected} = this.props;
-    return DSAMonths.map((m, i) => {
-      const active = selected.length === 0 || selected.includes(i);
-      return (
-        <Col key={i} xs={3} sm={2}>
-          <DSAMonthTooltip month={i}>
-            <Button bsStyle="primary" value={i} active={active} onClick={this.onToggle} block style={{margin: "0.1em"}}>
-                {m.normal}
-            </Button>
-          </DSAMonthTooltip>
-        </Col>
-      );
-    });
-  }
-
-  renderTitle() {
-    const {selected, title} = this.props;
-    const monthsInTitle = selected.length === 0 ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] : selected;
-    return <ControlLabel>{title} - <DSAMonth months={monthsInTitle} /></ControlLabel>
-  }
-
-  render()
-  {
-    const id = "filter-" + this.props.property;
-
-    return (
-      <FormGroup controlId={id}>
-        {this.renderTitle()}
-        <Grid fluid>
-          {this.renderMonths()}
-        </Grid>
+  return (<div className={classes.root}>
+    <FormControl component="fieldset" className={classes.formControl}>
+      <FormLabel component="legend">{getTitle(selected)}</FormLabel>
+      <FormGroup row>
+        {getMonths(selected, onToggle)}
       </FormGroup>
-    );
-  }
+    </FormControl>
+  </div>);
 }
 
-FilterWidget.propTypes = {
+DSAMonthPicker.propTypes = {
   selected: PropTypes.array,
   options: PropTypes.array,
 };
+
+export default DSAMonthPicker;
 

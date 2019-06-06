@@ -1,86 +1,80 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
-import FilterWidget from './FilterWidget';
-import DSAMonthPicker from './DSAMonthPicker';
+import { DSAGrid, DSAGridRow } from '../controls/DSAGrid';
+
 import DSAFloraGrid from './DSAFloraGrid';
-import {DSARegionen} from './DSAUtils';
+import DSAFloraFilter from './DSAFloraFilter'
+
 import {Flora} from "../data/DSAFloraData";
+import {Regions} from "../data/DSARegions";
 
-export default class App extends Component {
+const styles = {
+  root: {
+    flexGrow: 1,
+  }
+};
 
-  constructor(props) {
-    super(props);
+class FloraMain extends React.Component {
 
-    this.state = {
-      filter: {
-        names: [],
-        regionen: [],
-        gebiete: [],
-        umgebung: [],
-        months: []
-      },
-    };
-
-    this.onFilterChanged = this.onFilterChanged.bind(this)
+  state = {
+    filter: {
+      names: [],
+      regions: [],
+      areas: [],
+      surroundings: [],
+      months: []
+    }
   }
 
-  onFilterChanged(filter) {
+  onFilterChanged = (prop, val) => {
     this.setState(prevState => {
-      var newFilter = prevState.filter;
-      for (var k in filter) {
-        newFilter[k] = filter[k];
-      }
+      let newFilter = prevState.filter;
+      newFilter[prop] = val;
       return {
         filter: newFilter
       };
     });
   }
 
-  getFilteredRegionen() {
-    if(this.state.filter.regionen.length > 0)
-      return this.state.filter.regionen;
+  getFilteredRegions() {
+    if(this.state.filter.regions.length > 0)
+      return this.state.filter.regions;
     else
-      return Object.keys(DSARegionen);
+      return Object.keys(Regions);
   }
 
-  getGebiete(flora) {
-    // get all gebiete arrays
-    const gebieteArrays = flora.map((f) => {
-        return f.Gebiete;
-    });
-
-    const regionen = this.getFilteredRegionen();
+  getAreas(flora) {
+    // get all area arrays
+    const areaArrays = flora.map((f) => f.Gebiete);
+    const regions = this.getFilteredRegions();
 
     // flattern the array (it is an array of arrays)
-    return [].concat(...gebieteArrays)
-    // only use unique values
-    .filter((val, id, array) => {
-       return array.indexOf(val) === id;
-    })
-    // only use gebiete that are not filtered by the region:
-    .filter((val) => {
-      return regionen.some(key => DSARegionen[key].includes(val));
-    })
-    // sort it (by alph)
-    .sort();
+    return [].concat(...areaArrays)
+      // only use unique values
+      .filter((val, id, array) => array.indexOf(val) === id)
+      // only use areas that are not filtered by the region:
+      .filter((val) => regions.some(key => Regions[key].includes(val)))
+      // sort it (by alph)
+      .sort();
   }
 
-  getRegionen(gebiete) {
-    let filteredGebiete = gebiete
-    if(this.state.filter.gebiete.length > 0)
-      filteredGebiete = this.state.filter.gebiete;
-    return Object.keys(DSARegionen).filter((k) => {
-      return DSARegionen[k].some(r => filteredGebiete.includes(r));
-    });
+  getRegions(areas) {
+    let filteredAreas = areas
+    if(this.state.filter.areas.length > 0)
+      filteredAreas = this.state.filter.areas;
+    return Object.keys(Regions).filter((k) =>
+      Regions[k].some(r => filteredAreas.includes(r)));
   }
 
-  getUmgebung(flora) {
-    // get all gebiete arrays
-    const umgebungArrays = flora.map((f) => {
+  getSurroundings(flora) {
+    // get all surrounding arrays
+    const surroundingArrays = flora.map((f) => {
         return Object.keys(f.Schwierigkeit);
     });
     // flattern the array (it is an array of arrays)
-    return [].concat(...umgebungArrays)
+    return [].concat(...surroundingArrays)
     // only use unique values
     .filter((val, id, array) => {
        return array.indexOf(val) === id;
@@ -97,31 +91,30 @@ export default class App extends Component {
         if(!currentFilter.names.includes(f.Name))
           return false;
       }
-      // 1) Gebiet
-      if(currentFilter.gebiete.length > 0) {
-        if(!f.Gebiete.some(r => currentFilter.gebiete.includes(r)))
+      // 1) Areas
+      if(currentFilter.areas.length > 0) {
+        if(!f.Gebiete.some(r => currentFilter.areas.includes(r)))
           return false;
       }
 
-      // 2) Umgebung
-      if(currentFilter.umgebung.length > 0) {
-        if(!Object.keys(f.Schwierigkeit).some(r => currentFilter.umgebung.includes(r)))
+      // 2) Surroundings
+      if(currentFilter.surroundings.length > 0) {
+        if(!Object.keys(f.Schwierigkeit).some(r =>
+          currentFilter.surroundings.includes(r)))
           return false;
       }
 
       // 3) Month
       if(currentFilter.months.length > 0) {
         // check if there is something to harvest:
-        if(!Object.keys(f.Ernte).some((key) => {
-          return f.Ernte[key].some(r => currentFilter.months.includes(r));
-        }))
+        if(!Object.keys(f.Ernte).some((key) => f.Ernte[key].some(r => currentFilter.months.includes(r))))
           return false;
       }
 
-      // 4) Region
-      if(currentFilter.regionen.length > 0) {
+      // 4) Regions
+      if(currentFilter.regions.length > 0) {
         if(!f.Gebiete.some((g) => {
-          return currentFilter.regionen.some(key => DSARegionen[key].includes(g));
+          return currentFilter.regions.some(key => Regions[key].includes(g));
           }))
           return false;
       }
@@ -131,72 +124,33 @@ export default class App extends Component {
   }
 
   render() {
-    const filteredFlora = this.getFilteredFlora(data.flora, this.state.filter)
+    const { classes } = this.props;
+    const filteredFlora = this.getFilteredFlora(Flora, this.state.filter)
     const names = filteredFlora.map(f => f.Name);
-    const gebiete = this.getGebiete(filteredFlora);
-    const regionen = this.getRegionen(gebiete);
-    const umgebung = this.getUmgebung(filteredFlora);
+    const areas = this.getAreas(filteredFlora);
+    const regions = this.getRegions(areas);
+    const surroundings = this.getSurroundings(filteredFlora);
     return (
-      <Grid>
-        <Jumbotron>
-          <h1>DSA 5 Web Flora</h1>
-        </Jumbotron>
-        <Row>
-          <PageHeader>Filter <small>Klicke auf den Filter-Titel um mehr informationen zu erhalten.</small></PageHeader>
-        </Row>
-        <Row>
-          <Col xs={12} sm={6} md={3}>
-            <FilterWidget options={names}
-                title="Pflanze"
-                selected={this.state.filter.names}
-                property="names"
-                onUserInput={this.onFilterChanged} >
-                Suche nach einer oder mehreren speziellen Pflanzenarten (z.B.: Alraune). <br/>
-                Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-              </FilterWidget>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <FilterWidget options={regionen}
-              title="Regionen"
-              selected={this.state.filter.regionen}
-              property="regionen"
-              onUserInput={this.onFilterChanged}>
-              Suche nach einer oder mehreren speziellen Regionen (z.B.: Mittelreich). <br/>
-              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-              <p>
-              <Image src="./map.jpg" title="Karte von Regionen" alt="Karte von Regionen" responsive />
-              </p>
-            </FilterWidget>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <FilterWidget options={gebiete}
-              title="Gebiete"
-              selected={this.state.filter.gebiete}
-              property="gebiete"
-              onUserInput={this.onFilterChanged}>
-              Suche nach einem oder mehreren speziellen Gebieten (z.B.: Neunaugensee). <br/>
-              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-            </FilterWidget>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <FilterWidget options={umgebung}
-              title="Umgebung"
-              selected={this.state.filter.umgebung}
-              property="umgebung"
-              onUserInput={this.onFilterChanged}>
-              Suche nach einer oder mehreren Umgebungen (z.B.: Waldrand). <br/>
-              Die angezeigten Auswahlmöglichkeiten hängen von den anderen Filtern ab.
-            </FilterWidget>
-          </Col>
-        </Row>
-        <Row>
-          <DSAMonthPicker title="Erntezeit"
-            selected={this.state.filter.months}
-            property="months"
-            onUserInput={this.onFilterChanged} />
-        </Row>
-        <DSAFloraGrid flora={filteredFlora} />
-      </Grid>
-    );
+      <main className={classes.root}>
+        <DSAGrid>
+          <DSAGridRow>
+            <DSAFloraFilter
+              names={names}
+              areas={areas}
+              regions={regions}
+              surroundings={surroundings}
+              onFilterChanged={this.onFilterChanged}
+              filter={this.state.filter}
+            />
+          </DSAGridRow>
+          <DSAFloraGrid flora={filteredFlora} />
+        </DSAGrid>
+      </main>);
   }
-}
+};
+
+FloraMain.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(FloraMain);

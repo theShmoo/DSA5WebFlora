@@ -1,23 +1,35 @@
-import React, { Component } from 'react';
-import {Col, Row, PageHeader} from 'react-bootstrap';
-import DSAFlora from './DSAFlora.jsx';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
-export default class DSAFloraGrid extends Component {
-  render()
-  {
-    const flora = this.props.flora.map((f, i) => {
+import DSAFlora from './DSAFlora';
+import { DSAGrid, DSAGridItem} from '../controls/DSAGrid';
+import DSAInfoBox from '../controls/DSAInfoBox';
+
+const styles = {
+  root: {
+    flexGrow: 1,
+  }
+};
+
+function DSAFloraGrid(props) {
+    const { classes, flora } = props;
+    const all = flora.map((f, i) => {
       return (
-        <Col sx={6} sm={6} md={4} lg={3} key={i}>
+        <DSAGridItem xs={12} sm={6} md={4} lg={3} key={i}>
           <DSAFlora flora={f} />
-        </Col>);
+        </DSAGridItem>);
     })
-    return (
-      <div>
-        <Row>
-          <PageHeader>Flora</PageHeader>
-        </Row>
-        {flora}
+    return (<div className={classes.root}>
+        <DSAInfoBox title="Pflanzen">
+          <DSAGrid>{all}</DSAGrid>
+        </DSAInfoBox>
       </div>
     );
-  }
 }
+
+DSAFloraGrid.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default withStyles(styles)(DSAFloraGrid);
