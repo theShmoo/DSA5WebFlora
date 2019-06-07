@@ -35,7 +35,7 @@ function DSAFloraFilter(props) {
 
   return <DSAInfoBox title="Filter">
     <DSAGrid>
-      <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+      <DSAGridItem xs={12} sm={12} md={6}>
         <DSASelect options={nameOptions}
           label="Pflanzen"
           value={filter.names}
@@ -43,7 +43,7 @@ function DSAFloraFilter(props) {
           onChange={e => onfilterResulToFilter("names", e)}
           helperText="z.B.: Alraune" />
       </DSAGridItem>
-      <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+      <DSAGridItem xs={12} sm={12} md={6}>
         <DSASelect options={regionOptions}
           label="Regionen"
           value={filter.regions}
@@ -51,15 +51,16 @@ function DSAFloraFilter(props) {
           onChange={e => onfilterResulToFilter("regions", e)}
           helperText="z.B.: Mittelreich" />
       </DSAGridItem>
-      <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+      <DSAGridItem xs={12} sm={12} md={6}>
         <DSASelect options={areaOptions}
           label="Gebiete"
           value={filter.areas}
           multi={true}
+
           onChange={e => onfilterResulToFilter("areas", e)}
           helperText="z.B.: Neunaugensee." />
       </DSAGridItem>
-      <DSAGridItem xs={12} sm={12} md={6} lg={4}>
+      <DSAGridItem xs={12} sm={12} md={6}>
         <DSASelect options={surroundingOptions}
           label="Umgebung"
           value={filter.surroundings}
