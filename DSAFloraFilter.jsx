@@ -19,7 +19,7 @@ function DSAFloraFilter(props) {
   const {names, areas, regions, surroundings,
     filter, onFilterChanged} = props;
 
-  const onfilterResulToFilter = (prop, values) => {
+  const onfilterResultToFilter = (prop, values) => {
     if(values) {
       onFilterChanged(prop, values.map(v => v.value));
     }
@@ -40,7 +40,7 @@ function DSAFloraFilter(props) {
           label="Pflanzen"
           value={filter.names}
           multi={true}
-          onChange={e => onfilterResulToFilter("names", e)}
+          onChange={e => onfilterResultToFilter("names", e)}
           helperText="z.B.: Alraune" />
       </DSAGridItem>
       <DSAGridItem xs={12} sm={12} md={6}>
@@ -48,7 +48,7 @@ function DSAFloraFilter(props) {
           label="Regionen"
           value={filter.regions}
           multi={true}
-          onChange={e => onfilterResulToFilter("regions", e)}
+          onChange={e => onfilterResultToFilter("regions", e)}
           helperText="z.B.: Mittelreich" />
       </DSAGridItem>
       <DSAGridItem xs={12} sm={12} md={6}>
@@ -56,8 +56,7 @@ function DSAFloraFilter(props) {
           label="Gebiete"
           value={filter.areas}
           multi={true}
-
-          onChange={e => onfilterResulToFilter("areas", e)}
+          onChange={e => onfilterResultToFilter("areas", e)}
           helperText="z.B.: Neunaugensee." />
       </DSAGridItem>
       <DSAGridItem xs={12} sm={12} md={6}>
@@ -65,7 +64,7 @@ function DSAFloraFilter(props) {
           label="Umgebung"
           value={filter.surroundings}
           multi={true}
-          onChange={e => onfilterResulToFilter("surroundings", e)}
+          onChange={e => onfilterResultToFilter("surroundings", e)}
           helperText="z.B.: Waldrand" />
       </DSAGridItem>
       <DSAGridItem xs={12}>
